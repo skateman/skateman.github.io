@@ -1,0 +1,44 @@
+body {
+  font-family: 'Cambay', sans-serif !important;
+}
+
+h1, strong {
+  font-weight: 700 !important;
+}
+
+nav {
+  font-size: large;
+  text-transform: lowercase;
+}
+
+a, a:link, a:visited, a:active {
+  color: inherit;
+}
+
+img#me {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  width: 300px;
+}
+
+#social {
+  margin-top: 1.5em;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+#social a {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+#social a:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+hr {
+  margin-bottom: 0px !important;
+}
