@@ -1,9 +1,7 @@
-$(function () {
+document.addEventListener('DOMContentLoaded', function(event) {
   'use strict';
 
-  $('.twemoji').each(function (_, node) {
-    twemoji.parse(node);
-  });
+  document.querySelectorAll('.twemoji').forEach(twemoji.parse);
 
   var mapping = {
     'm':           '(',
@@ -16,22 +14,21 @@ $(function () {
     'skateman':    '︵',
     '@':           ' ',
     'skateman.eu': '┻━┻'
-  }
+  };
 
-  $('a:has(.fa-envelope-o)').on({
-    mouseenter: function (e) {
-      var link = $(this).attr('href');
-      $.each(mapping, function (key, value) {
-        link = link.replace(value, key);
-      });
-      $(this).attr('href', link);
-    },
-    mouseleave: function (e) {
-      var link = $(this).attr('href');
-      $.each(mapping, function (key, value) {
-        link = link.replace(key, value);
-      });
-      $(this).attr('href', link);
-    }
+  document.querySelector('a#e-mail').addEventListener('mouseenter', function(e) {
+    var link = this.getAttribute('href');
+    Object.keys(mapping).forEach(function(key) {
+      link = link.replace(mapping[key], key);
+    });
+    this.setAttribute('href', link);
+  });
+
+  document.querySelector('a#e-mail').addEventListener('mouseleave', function(e) {
+    var link = this.getAttribute('href');
+    Object.keys(mapping).forEach(function(key) {
+      link = link.replace(key, mapping[key]);
+    });
+    this.setAttribute('href', link);
   });
 });
