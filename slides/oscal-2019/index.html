@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>The decloudification of the Cloud</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+		<!-- Team CSS -->
+		<style id="global-css-output" type="text/css">
+			@import url("https://s3.amazonaws.com/static.slid.es/fonts/overpass2/overpass2.css");
+.reveal {
+  
+
+  /*fix icon inversion*/
+
+}
+.reveal svg,
+.reveal text,
+.reveal tspan,
+.reveal svg text {
+  font-family: "Overpass 2", Overpass, sans-serif !important;
+  color: currentcolor;
+  fill: currentcolor;
+}
+.reveal .sl-block {
+  color: #354045;
+  fill: currentcolor;
+}
+.reveal .sl-block svg {
+  color: currentcolor;
+}
+.reveal .has-dark-background,
+.reveal .has-dark-background > .sl-block {
+  color: white;
+  fill: currentcolor;
+}
+.reveal section > .sl-block .redhat-logo .logotext {
+  fill: #000000;
+}
+.reveal .has-dark-background > .sl-block .redhat-logo .logotext {
+  fill: #ffffff;
+}
+.reveal .has-dark-background > .sl-block[data-block-type="image"] {
+  color: #ffffff;
+}
+.reveal [fill="none"] {
+  fill: none !important;
+}
+.reveal [fill="#a30000"] {
+  fill: #aa0000 !important;
+}
+.reveal [fill="#cc2029"],
+.reveal [fill="#cb2027"],
+.reveal [fill="#c00"] {
+  fill: #cc0000 !important;
+}
+.reveal [fill="#fff"] {
+  fill: #ffffff !important;
+}
+.reveal [fill="#6d6e70"] {
+  fill: #6d6e70 !important;
+}
+.reveal [fill="#231f20"] {
+  fill: currentcolor !important;
+}
+.reveal [fill="#efab1f"] {
+  fill: #efab1f !important;
+}
+.reveal [fill="#92d400"] {
+  fill: #92d400 !important;
+}
+.reveal .has-dark-background [fill="#6d6e70"] {
+  fill: #266272 !important;
+}
+.reveal .has-dark-background [fill="#fff"] {
+  fill: #555555 !important;
+}
+.reveal .has-dark-background [fill="#fff"] {
+  fill: #333333 !important;
+}
+.reveal .has-dark-background [stroke="#231f20"] {
+  stroke: currentcolor;
+}
+.reveal [data-inline-svg="true"] img {
+  display: none;
+}
+
+		</style>
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-sky-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="8bf886c1c4c4bfc045dc7a79d03cb046"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="3000a08118e1279412666e62afab07cb"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>The decloudification of the Cloud</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 323px; left: 560px; top: 541px;" data-block-id="766dc9b600dfa0f92626c05ad287b981"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Dávid Halász<br>
+@halaszdavid</p>
+</div></div></section><section data-id="6cc08d548419d0be031fda2675324836"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 198px; left: 0px; top: 251px;" data-block-id="76f635f34a844f4e80db8dddeae5950a"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1820" data-natural-height="376" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/3608e002e3740f61490f49d89cf0ae7c.png"></div></div></section><section data-id="6700efd59ce20cd86259510048e2a721"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 205px; height: auto;" data-block-id="73c9c5c9f6be6dd919d3a966f63828b5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>I'm the guy who got sick 2 years ago right before OSCAL</h1>
+</div></div></section><section data-id="c4d051a13d114cfea1f8e17ebef03dc4"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="d6eb57bf737f54e23c1058a4a40f63e3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>So last year...</h1>
+</div></div></section><section data-id="932288ce2876ab551334db2118306554"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 256px; left: 0px; top: 223px;" data-block-id="25783d7e875720ce95497edeb8ef02e3"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="462" data-natural-height="123" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/78dd9af44c2cb583c31bafc2aa2f1ed8.png"></div></div></section><section data-id="c38367efc7c39fbc57dc09566ecd345c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="8009a147052ac3fb50aef22563d417a4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>I made it!</h1>
+</div></div></section><section data-id="7e19ecbea83dfde9e051c6a7832797db"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1244px; height: 700px; left: -143px; top: 0px;" data-block-id="abe0ee774573de6aad104fade02f9407"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="2400" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/2b1d576a5edcd3329fba281c95474159.jpg"></div></div></section><section data-id="f75c5b07b8ab828c967c39e108db23cd"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="c5f40443ad38bd14fd5ff3ee0a25bbc1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>/me</h1>
+</div></div></section><section data-id="9834168637312de1505272effcf9373c"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 720px; left: 0px; top: -10px;" data-block-id="2b468252d502404e69b25ed471a0f28b"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1800" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/04937bea3b377cb8b85609ee052e1987.jpg"></div></div></section><section data-id="c5b8137f0faae5aabe41d083e7421857"><div class="sl-block" data-block-type="image" style="width: 356px; height: 237px; left: 80px; top: 71px; min-width: 4px; min-height: 4px;" data-block-id="99abefae9b7d973eb27ed11be1be8679"><div class="sl-block-content fragment" style="z-index: 18;" data-fragment-index="2"><img style="" data-natural-width="1920" data-natural-height="1280" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/167cf7594397698c3dfafaa48aa75acb.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 353px; height: 82px; left: 527px; top: 148px; min-width: 4px; min-height: 4px;" data-block-id="b35deb149510ce4cabf7931b43aa3adc"><div class="sl-block-content fragment" style="z-index: 10;" data-fragment-index="3"><img data-natural-width="1000" data-natural-height="232" style="" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/596b8cab8a67ab3ac3b934829b664dbd.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 160px; height: 293px; left: 80px; top: 350px; min-width: 4px; min-height: 4px;" data-block-id="f92e85de62fcf5f537ebac179733d11d"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="4"><img style="" data-natural-width="230" data-natural-height="420" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/de3a5c3bd235556ca028e9950d92616f.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 370px; height: 213px; left: 510px; top: 384px; min-width: 4px; min-height: 4px;" data-block-id="33a0a989476558823fef1dd0c32e6187"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="5"><img style="" data-natural-width="640" data-natural-height="368" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/7f455dfcac4601347474bb6e8a48500f.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 267px; height: 233px; left: 243px; top: 374px;" data-block-id="768ea1f6159972ef95b22fc4712f43ae"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="6"><img style="" data-natural-width="240" data-natural-height="210" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/b11adbe86769e55917ee77320a2cd1f8.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 213px; height: 237px; left: 270px; top: 374px;" data-block-id="51436f77ccdab0c28032443dbd23ccdf"><div class="sl-block-style" style="z-index: 14; transform: rotate(360deg);"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="7"><img data-natural-width="225" data-natural-height="250" style="" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/2f642d38af471e63036032b738e7d0bc.png"></div></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 356px; height: 237px; left: 80px; top: 71px;" data-block-id="c0f39263d7e7495c8fb06b76e3dda3ff"><div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="1"><img style="" data-natural-width="900" data-natural-height="600" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/8079558b10cc3f4cf85324e3311bc2fe.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 356px; height: 237px; left: 80px; top: 71px;" data-block-id="518b4e51a1e0ac3b2a252093121c30f5"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0"><img style="" data-natural-width="900" data-natural-height="600" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/e0c05da2c80916a75983d6c8240311aa.png"></div></div></section><section data-background-color="#000000" data-background-image="the-decloudification-of-the-cloud/fdb3631a7b9f2e86e1ff3ee09f218602.svg" data-id="c4b590bdd9094616db7fbb98623df51c"> 
+    
+
+
+
+
+<div class="sl-block" data-block-type="snippet" style="width: 869px; height: 700px; left: -389px; top: 0px;" data-block-id="6045f93641376d5f07412261b741299e">
+    <div class="sl-block-content" data-has-custom-html="" style="z-index: 10;">
+        <svg class="closing-logo logotype" width="494" height="180" viewbox="0 0 613 145" style="position:absolute; top:0; bottom: 0%; height: 100%; width: 100%; left:0: right:0;">
+            <g>
+                <path class="logotext" style="fill:white" d="M579.74,92.8c0,11.89,7.15,17.67,20.19,17.67a52.11,52.11,0,0,0,11.89-1.68V95a24.84,24.84,0,0,1-7.68,1.16c-5.37,0-7.36-1.68-7.36-6.73V68.3h15.56V54.1H596.78v-18l-17,3.68V54.1H568.49V68.3h11.25Zm-53,.32c0-3.68,3.69-5.47,9.26-5.47a43.12,43.12,0,0,1,10.1,1.26v7.15a21.51,21.51,0,0,1-10.63,2.63c-5.46,0-8.73-2.1-8.73-5.57m5.2,17.56c6,0,10.84-1.26,15.36-4.31v3.37h16.82V74.08c0-13.56-9.14-21-24.39-21-8.52,0-16.94,2-26,6.1l6.1,12.52c6.52-2.74,12-4.42,16.83-4.42,7,0,10.62,2.73,10.62,8.31v2.73a49.53,49.53,0,0,0-12.62-1.58c-14.31,0-22.93,6-22.93,16.73,0,9.78,7.78,17.24,20.19,17.24m-92.44-.94h18.09V80.92h30.29v28.82H506V36.12H487.93V64.41H457.64V36.12H439.55ZM370.62,81.87c0-8,6.31-14.1,14.62-14.1A17.22,17.22,0,0,1,397,72.09V91.54A16.36,16.36,0,0,1,385.24,96c-8.2,0-14.62-6.1-14.62-14.09m26.61,27.87h16.83V32.44l-17,3.68V57.05a28.3,28.3,0,0,0-14.2-3.68c-16.19,0-28.92,12.51-28.92,28.5a28.25,28.25,0,0,0,28.4,28.6,25.12,25.12,0,0,0,14.93-4.83ZM320,67c5.36,0,9.88,3.47,11.67,8.83H308.47C310.15,70.3,314.36,67,320,67M291.33,82c0,16.2,13.25,28.82,30.28,28.82,9.36,0,16.2-2.53,23.25-8.42l-11.26-10c-2.63,2.74-6.52,4.21-11.14,4.21a14.39,14.39,0,0,1-13.68-8.83h39.65V83.55c0-17.67-11.88-30.39-28.08-30.39a28.57,28.57,0,0,0-29,28.81M262,51.58c6,0,9.36,3.78,9.36,8.31S268,68.2,262,68.2H244.11V51.58Zm-36,58.16h18.09V82.92h13.77l13.89,26.82H292l-16.2-29.45a22.27,22.27,0,0,0,13.88-20.72c0-13.25-10.41-23.45-26-23.45H226Z"></path>
+            </g>
+        </svg>
+        <svg class="closing-logo icon" width="494" height="180" viewbox="0 0 613 145" preserveaspectratio="xMminYmin meet" style="position:absolute; top:0;width: 100%;  bottom: 0%; height: 100%; left:0: right:0;">
+            <g>
+                <path style="fill:#e00;" d="M127.47,83.49c12.51,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42l-7.45-32.36c-1.72-7.12-3.23-10.35-15.73-16.6C124.89,8.69,103.76.5,97.51.5,91.69.5,90,8,83.06,8c-6.68,0-11.64-5.6-17.89-5.6-6,0-9.91,4.09-12.93,12.5,0,0-8.41,23.72-9.49,27.16A6.43,6.43,0,0,0,42.53,44c0,9.22,36.3,39.45,84.94,39.45M160,72.07c1.73,8.19,1.73,9.05,1.73,10.13,0,14-15.74,21.77-36.43,21.77C78.54,104,37.58,76.6,37.58,58.49a18.45,18.45,0,0,1,1.51-7.33C22.27,52,.5,55,.5,74.22c0,31.48,74.59,70.28,133.65,70.28,45.28,0,56.7-20.48,56.7-36.65,0-12.72-11-27.16-30.83-35.78"></path>
+                <path style="fill:#000;" d="M160,72.07c1.73,8.19,1.73,9.05,1.73,10.13,0,14-15.74,21.77-36.43,21.77C78.54,104,37.58,76.6,37.58,58.49a18.45,18.45,0,0,1,1.51-7.33l3.66-9.06A6.43,6.43,0,0,0,42.53,44c0,9.22,36.3,39.45,84.94,39.45,12.51,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42Z"></path>
+            </g>
+        </svg>
+    </div>
+</div></section><section data-id="fa8efcbebba39fd4e649088de225c7b9"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 826px; height: 203px; left: 67px; top: 249px;" data-block-id="43aa62c978a0f408d62a1670307ef540"><div class="sl-block-content" style="z-index: 10;" data-inline-svg="false"><img style="" data-natural-width="244" data-natural-height="60" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/e3ec22079fbb7172dd35a3deba085b0f.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 152px; height: 140px; left: 724px; top: 490px;" data-block-id="6984101f9b8bb3ea09a76714176d570e"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="999" data-natural-height="922" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/ecbff2367da6b9e793a593a743e2c586.png"></div></div></section><section data-id="31c21fafb204731d6000c5fd69b3f3ff"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="ea50b3ae7cc965031c4a6dd5bd068cd0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;"><h1>What is the Cloud?</h1></div></div></section><section data-id="9d28fa5adf29df77a1a25c98c49ad265"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="33b00aaf9decacedc0b3165746fb3a59"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Why is it called<br>
+the Cloud?</h1>
+</div></div></section><section data-id="c06945b26cd9c781ce9d529bbf294641"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="18ef22c3073c77355d4677364f6627f1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>It's <strong>cloud</strong>y</h1>
+</div></div></section><section data-id="9d6d5b81358b0cb5d147870a8b0bb995"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="221f5cbbf8666c8351ca18fb7be44129"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Your life is<br>
+complete now</h1>
+</div></div></section><section data-id="9777c1985cdc1a0f9dbdd08dec309c81"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="d3ab1823c4343c623a2eafc83b7520a1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>You're welcome!</h1>
+</div></div></section><section data-id="4dcc4e3aaace19ffe229519fc71d1524"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="2b5cde9f3b57cc8c045cb959ccb0f197"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Thank you for<br>
+your attention!</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 453px; left: 240px; top: 584px;" data-block-id="528b2898285a981f9ea7b1a73d440623"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="2400" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/cdf1ad088d888ef5bb0faaff0688fbd0.png"></div></div></section><section data-id="8e96e4382d9b3721f49cadc861a977ea"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="c4e508a1f7c33f686549381b0ebce599"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>Let there<br>
+be light!</h1>
+</div></div></section><section data-id="0d11e55e8abb70c80f64c0db1131a536"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 386px; height: 700px; left: 287px; top: 0px;" data-block-id="db2b065296e78cd571b0ec00d9359da0"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="745" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/5dba05a524057c4aecbc1eae2e5a9027.png"></div></div></section><section data-id="600cd9e16a4bdcc885c3db2acd267af7"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 908px; height: 594px; left: 26px; top: 53px;" data-block-id="d9f07f89a00f246c73ff6264a1253745"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="324" data-natural-height="212" style="" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/106f6b4d314be3781dee98f2e1f6a2b5.svg"></div></div></section><section data-id="b59bfb2c6e1f15985f0534a93043b02e"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 480px; left: 0px; top: 110px;" data-block-id="7a72c00dbf1b013437d1638613df6b81"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1280" data-natural-height="640" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/0c27066bd966a3a5ea5191825ac13016.png"></div></div></section><section data-id="4a9e25617b6ae29760babd9c48b43a78"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 733px; height: 700px; left: 114px; top: 0px;" data-block-id="9c4bd6490e0a0e00f797b45c7605f083"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1414" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/4c870e34a642ed6e0b0c1d1ac4f0c1e9.png"></div></div></section><section data-id="3f3b59d3c4b90a208635740fb3feb1f1"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="2dc8ed111974f561a28860958b167326"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;"><h1>We can do the same with computing!</h1></div></div></section><section data-id="17af162f1784f8165669f4e0de98a7eb"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1050px; height: 700px; left: -45px; top: 0px;" data-block-id="841c7941118ca664eb7f5be3dc493551"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/d0a42107e85744d152ce7629c763080d.jpg"></div></div></section><section data-id="23fb0a3c0503eaffc26e5210a6e04b54"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 700px; height: 700px; left: 130px; top: 0px;" data-block-id="9793299110d150abf6382230bfdcd45b"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/839a4623b066b8008f6dc048afcd9cbb.png"></div></div></section><section data-id="c27555684d07f30c0ac066a5b4421241"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 700px; height: 700px; left: 130px; top: 0px;" data-block-id="96bda03c130e82c5fd401f6e2baae35f"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="720" data-natural-height="720" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/95d08611469887e03dc8ca723ff2998e.png"></div></div></section><section data-id="4cf10d9b7f75c9b521d28e31d6fd5376"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="10a5cb75d23f06146f2712ad8e8b2421"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>How?</h1>
+</div></div></section><section data-id="9791f33c73f103ebde6cfbc02e8aca76"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="e7b5aa432e91a219a013c3491a9fa25f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>You shouldn't care,<br>
+it's in the <strong>cloud</strong>
+</h1>
+</div></div></section><section data-id="56bb445e627c8734c1f370723eed4b5b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="23d2d872ee75fcc2cc4b2f8677386476"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>But you're here because you do care</h1>
+</div></div></section><section data-id="c88a4e4113eb872c7b7a68011c5c9bbd"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 70px;" data-block-id="f9d1d46d744451675834a10eb312202a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<h2>What do we want?</h2>
+
+<ul>
+	<li>Unlimited amount of resources
+	<ul>
+		<li>Well, theoretically</li>
+		<li>Resources grouped and redistributed</li>
+		<li>Users don't know and don't care how</li>
+	</ul>
+	</li>
+	<li>Scale up and down seamlessly</li>
+	<li>Redundancy out of the box</li>
+	<li>Pay as you go
+	<ul>
+		<li>Per hour, per gigabyte, etc.</li>
+		<li>Metrics</li>
+	</ul>
+	</li>
+	<li>Access to resources
+	<ul>
+		<li>Well documented APIs and SDKs</li>
+		<li>High level of automation</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="b0440cda1e299667c01be48ae98eb6e9"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="a04ea7a1f19ecb2dc5a97b51d092ab1d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;">
+<h2>Storage</h2>
+
+<ul>
+	<li>In UNIX "everything" is a file</li>
+	<li>Access to devices as they would be files
+	<ul>
+		<li>Writing into the file writes to the device</li>
+		<li>Reading from the file reads from the device</li>
+	</ul>
+	</li>
+	<li>Mounting
+	<ul>
+		<li>Connect a drive to the directory tree</li>
+		<li>Filesystem driver does the hard work</li>
+	</ul>
+	</li>
+	<li>Access to files as they would devices
+	<ul>
+		<li>Create a file and format it as a drive</li>
+		<li>Mount the file as a drive</li>
+	</ul>
+	</li>
+	<li>Files can be shared over the network</li>
+</ul>
+</div></div></section><section data-id="a33a5d974c94791482270fc63aafda6e"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="6c605400690a71bf7be4043ebbd28245"><div class="sl-block-content notranslate" style="z-index: 10; font-size: 145%; border-width: 14px;" data-highlight-theme="zenburn"><pre class="bash"><code style="padding: 15px;" data-line-numbers="|1-2|4-5|7-8|10-11|13-14|16-17|19-20|22-23|"># Create 256 MB file filled with zeroes
+dd if=/dev/zero of=my-drive bs=1M count=256
+
+# Format the file as FAT32
+mkfs.vfat -F 32 my-drive
+
+# Create a folder to mount the file
+mkdir drive-content
+
+# Mount the file to the directory tree
+mount my-drive drive-content
+
+# Write something into a file
+echo "hello world" &gt; drive-content/readme
+
+# Unmount the file from the directory tree
+umount drive-content
+
+# Remove the empty folder
+rmdir drive-content
+
+# Show the contents of the file
+hexdump -C my-drive</code></pre></div></div>
+</section><section data-id="bc3c95f30153dda4a1c6267b402b15a5"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="9b675a0fdd80f5a6072a1d3596d511d5"><div class="sl-block-content notranslate" style="z-index: 11; font-size: 140%; border-width: 14px;" data-highlight-theme="zenburn"><pre><code style="padding: 15px;" data-line-numbers="|17,19,23">00000000  eb58906d6b66732e 6661740002012000  |.X.mkfs.fat... .|
+00000010  0200000000f80000 2000400000000000  |........ .@.....|
+00000020  00000800c10f0000 0000000002000000  |................|
+00000030  0100060000000000 0000000000000000  |................|
+00000040  80002901fa897c4e 4f204e414d452020  |..)...|NO NAME  |
+00000050  2020464154333220 20200e1fbe777cac  |  FAT32   ...w|.|
+00000060  22c0740b56b40ebb 0700cd105eebf032  |".t.V.......^..2|
+00000070  e4cd16cd19ebfe54 686973206973206e  |.......This is n|
+00000080  6f74206120626f6f 7461626c65206469  |ot a bootable di|
+00000090  736b2e2020506c65 61736520696e7365  |sk.  Please inse|
+000000a0  7274206120626f6f 7461626c6520666c  |rt a bootable fl|
+000000b0  6f70707920616e64 0d0a707265737320  |oppy and..press |
+000000c0  616e79206b657920 746f207472792061  |any key to try a|
+000000d0  6761696e202e2e2e 200d0a0000000000  |gain ... .......|
+000000e0  0000000000000000 0000000000000000  |................|
+
+003f4400  4172006500610064 006d000f00966500  |Ar.e.a.d.m....e.|
+003f4410  0000ffffffffffff ffff0000ffffffff  |................|
+003f4420  524541444d452020 202020200097204b  |README      .. K|
+003f4430  ad4ead4e0000204b ad4e03000c000000  |.N.N.. K.N......|
+003f4440  0000000000000000 0000000000000000  |................|
+
+003f4600  68656c6c6f20776f 726c640a00000000  |hello world.....|
+003f4610  0000000000000000 0000000000000000  |................|</code></pre></div></div>
+</section><section data-id="ecaeef1b6f03ceb9a07c2c4c697772fe"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="623f47150b0a7231a02f0d810ef4ef37"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h2>Networking</h2>
+
+<ul>
+	<li>TUN/TAP
+	<ul>
+		<li>Virtual network interface</li>
+		<li>Read &amp; write as a regular file</li>
+		<li>Most common use case is VPN</li>
+	</ul>
+	</li>
+	<li>Software defined networking
+	<ul>
+		<li>Programmable network</li>
+		<li>Dynamic changes</li>
+		<li>Virtual devices</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="b063cb5f66e2dd87b51295198307390d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="d0444d7c9ae21adb224e1a84c54adb8d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Computing</h1>
+</div></div></section><section data-id="d8858aaa50456f04d64915c69307e053"><div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 400px; height: 104px; left: 280px; top: 472px;" data-block-id="d8af9384c13d5b33715ae72f2544361e"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-1-1557911506514"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-1-1557911506514)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 280px; top: 505px;" data-block-id="fa2e42641da434a5fd49253a31b253e0"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 400px; height: 104px; left: 280px; top: 368px;" data-block-id="b341743a2d5f719bebe10d16831c13cf"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-2-1557911538537"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-2-1557911538537)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 280px; top: 401px;" data-block-id="9c860b9c4dddfbc70b332e0dec4f07be"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="1">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 400px; height: 104px; left: 280px; top: 264px;" data-block-id="c9bc20d173d6dadc0176657c0515302d"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 15;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-3-1557911580583"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-3-1557911580583)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 280px; top: 297px;" data-block-id="4cd8cf6ecf3ba7d1f89556114f2692e0"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="2">
+<p>App</p>
+</div></div>
+</section><section data-id="982db196a8e5fac91e45efec6a8b547e"><div class="sl-block" data-block-type="shape" style="width: 400px; height: 104px; left: 500px; top: 472px;" data-block-id="84226f2edb71c127353599414349c5e2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-9-1557913031733"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-9-1557913031733)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 500px; top: 505px;" data-block-id="1f075f754a062f33cf921e3917c885f5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 104px; left: 500px; top: 368px;" data-block-id="4b8e05bf9abcd426ee6de5b07475d5b0"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-10-1557913031738"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-10-1557913031738)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 500px; top: 401px;" data-block-id="9d2c25b805d2d808ee4012cf6a1a3b16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 104px; left: 500px; top: 264px;" data-block-id="d6f20a049c5f11e87abbb672a887379d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 18;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-11-1557913031741"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-11-1557913031741)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 500px; top: 297px;" data-block-id="4c258dcc6e86f63a76608ae87413f8bf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;">
+<p>App</p>
+</div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 104px; left: 60px; top: 473px;" data-block-id="1e9f92ead86b883c50550ae1f6548803"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 23;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-12-1557913034371"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-12-1557913034371)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 60px; top: 506px;" data-block-id="10cf6f833a79e6efaa59c1342fbce495"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 104px; left: 60px; top: 369px;" data-block-id="056ea06fc1b68759a746c09f81d2b5be"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 25;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-13-1557913034377"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-13-1557913034377)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 60px; top: 402px;" data-block-id="d393829e790b98e81fac2810a7bbbaab"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 104px; left: 60px; top: 265px;" data-block-id="677b7c721596e43d7271096d18847a6e"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 27;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 104"><defs><clippath id="shape-mask-14-1557913034382"><rect width="400" height="104" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="104" rx="0" ry="0" clip-path="url(#shape-mask-14-1557913034382)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 60px; top: 298px;" data-block-id="9459b180659468c10d2d7fbcb4c38e9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28;">
+<p>App</p>
+</div></div></section><section data-id="4294bf68069c5bcc77f090caf3c94ba5"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1400px; height: 700px; left: -220px; top: 0px;" data-block-id="601fb83c95d573650bdf785d9455441c"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="250" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/c806b3e5cd3db0cf1f34e7bc3c7c0995.gif"></div></div></section><section data-id="cfd87536da1c878ba44a2794f752c8d0"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="715cd9340896112471b03b9de4d220dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>What is a computer?</h1>
+</div></div></section><section data-id="99491004e1e62c832c50e65f48687d53"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 620px; left: 0px; top: 40px;" data-block-id="5afe6aa93b77e39eb150beaaa7833171"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="323" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/81e4095d0e8f867d81d4b6b6ed591c64.png"></div></div></section><section data-id="f5768d54e42dba3f6360f1142e35c356"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="4dfea5133326d2d78158192cfaa3c85c"><div class="sl-block-content notranslate" style="z-index: 10; border-width: 14px; font-size: 125%;" data-highlight-theme="zenburn"><pre><code style="padding: 15px;" data-line-numbers="|4|5|6|7|9|10|11|12|">section .text
+   global _start
+  
+_start:
+   mov  eax, 45
+   xor  ebx, ebx
+   int  80h
+
+   add  eax, 16384
+   mov  ebx, eax
+   mov  eax, 45
+   int  80h
+  
+   cmp  eax, 0
+   jl exit
+   mov  edi, eax
+   sub  edi, 4
+   mov  ecx, 4096
+   xor  eax, eax
+   std
+   rep  stosd
+   cld
+
+exit:
+   mov  eax, 1
+   xor  ebx, ebx
+   int  80h</code></pre></div></div>
+</section><section data-id="f742b1312f8220407712b33e4da42011"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1086px; height: 700px; left: -63px; top: 0px;" data-block-id="7973c9b15acce2b7aaa4e6f561886f51"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="622" data-natural-height="401" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/82718e0a2510b42067cdc0e6021e2da5.jpg"></div></div></section><section data-id="dd0de1495278115fdeb141e2e3c1de06"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="cf211df3918dff270270293ee8ceaf0e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h2>Virtual Machines</h2>
+
+<ul>
+	<li>Easier management
+	<ul>
+		<li>Provisioning and retiring</li>
+		<li>Migration</li>
+		<li>Cloning</li>
+		<li>Snapshots</li>
+	</ul>
+	</li>
+	<li>Isolated environment
+	<ul>
+		<li>Security</li>
+	</ul>
+	</li>
+	<li>Dynamic resource allocation
+	<ul>
+		<li>Add memory, disk or CPU</li>
+		<li>Hotplug</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="52c7f1a1cdcaee277a0da2605efe8bd4"><div class="sl-block" data-block-type="shape" style="width: 400px; height: 70px; left: 80px; top: 560px;" data-block-id="0998ce7bb7da737d56abbfd5054bcd9c"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 70"><defs><clippath id="shape-mask-4-1557912917835"><rect width="400" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="70" rx="0" ry="0" clip-path="url(#shape-mask-4-1557912917835)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 80px; top: 576px;" data-block-id="512ca30d2227ff5f7024b1e2ddad7a69"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 70px; left: 80px; top: 490px;" data-block-id="b50de2ec86bcde4241ca7364f867f7b9"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 70"><defs><clippath id="shape-mask-5-1557912917839"><rect width="400" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="400" height="70" rx="0" ry="0" clip-path="url(#shape-mask-5-1557912917839)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 80px; top: 506px;" data-block-id="46e59992d0e83bc39f4f2699328f686e"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="1">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 256px;" data-block-id="7c092b050a27ec27f1e7f9e690f14aa2"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-6-1557912917843"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-6-1557912917843)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 272px;" data-block-id="580b66376ddfadd0b65ff362f5d3dda4"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="4">
+<p>App</p>
+</div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 396px;" data-block-id="b1a567da569e88af7ccfd2ab59ff252e"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 19;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-8-1557912994616"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-8-1557912994616)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 412px;" data-block-id="db42e77f60963447543cfc74b846e400"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;" data-fragment-index="2">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 326px;" data-block-id="579ff25f213d18c31cae157f30663158"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 23;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-17-1557913228108"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-17-1557913228108)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 342px;" data-block-id="0a4a249223e668c79a11513e67358bff"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25;" data-fragment-index="3">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 256px;" data-block-id="dfa2afb898254cef5389d5da72d96d3b"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 27;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-18-1557913255619"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-18-1557913255619)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 272px;" data-block-id="fac7ee29ca720876befecc8bdc9ff9db"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28;" data-fragment-index="5">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 396px;" data-block-id="a3b83fd66363a359b063b5d46a66f38f"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 29;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-19-1557913255631"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-19-1557913255631)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 412px;" data-block-id="f7bfa06271a81e71aea8d6aa03019a8e"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30;" data-fragment-index="5">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 326px;" data-block-id="4387d45886c0733871dbd668c7d9212d"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 31;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-20-1557913255636"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-20-1557913255636)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 342px;" data-block-id="6bbb9506954108ee8bc1fe5fb085ddd0"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 32;" data-fragment-index="5">
+<p>OS</p>
+</div></div></section><section data-id="926b9c12433252fc5e0d58cf2e692293"><div class="sl-block" data-block-type="shape" style="width: 505px; height: 70px; left: 80px; top: 560px;" data-block-id="8e9d46c495f318069a796aecaa7735bb"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 11;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 505 70"><defs><clippath id="shape-mask-29-1557913457242"><rect width="505" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="505" height="70" rx="0" ry="0" clip-path="url(#shape-mask-29-1557913457242)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 505px; left: 80px; top: 576px;" data-block-id="48cc0a5766577ed293a41f831b468a97"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 505px; height: 70px; left: 80px; top: 490px;" data-block-id="23f038059a2acb7348abf54399c72c21"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 505 70"><defs><clippath id="shape-mask-30-1557913457250"><rect width="505" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="505" height="70" rx="0" ry="0" clip-path="url(#shape-mask-30-1557913457250)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 505px; left: 80px; top: 506px;" data-block-id="852cc1cc443c147eb679703aa9d23f1f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 256px;" data-block-id="dcf40293911e6147b073172049add5c4"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 15;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-31-1557913457254"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-31-1557913457254)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 272px;" data-block-id="afe1905ee03a76561ed33a62d3f01501"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>App</p>
+</div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 396px;" data-block-id="52d4e9882299ec4852ee2eb7240c6531"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 18;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-32-1557913457260"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-32-1557913457260)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 412px;" data-block-id="a3fadffacc64e372acbe7ba679141014"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 326px;" data-block-id="91e44eff5bb4c1d3357c12883309b620"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 20;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-33-1557913457263"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-33-1557913457263)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 342px;" data-block-id="5f339632be273d07361402aef4a7d644"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 256px;" data-block-id="2ce277b8dd48b61ded1ae5cdd693bc9b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 22;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-34-1557913457267"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-34-1557913457267)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 272px;" data-block-id="7282d97a93aeda19bd1459e48a2fae7d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 396px;" data-block-id="8afd1421156da51c58797fe7e06df224"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 24;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-35-1557913457270"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-35-1557913457270)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 412px;" data-block-id="0f73c6443e1d270db49286b50f5ba4fa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25;">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 326px;" data-block-id="cd4fc42873e79cc7f585b4f95c8ad91b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 26;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-36-1557913457273"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-36-1557913457273)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 342px;" data-block-id="37935c521007cef4351d54fbf71623b9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 425px; top: 256px;" data-block-id="544caa92442228af5dcedad59a060b07"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 28;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-38-1557913510829"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-38-1557913510829)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 425px; top: 272px;" data-block-id="40f461ccd40879f5db0fc8532db90e11"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29;" data-fragment-index="0">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 425px; top: 396px;" data-block-id="fbd98e4ebac32b1922887630e4913b94"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 30;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-39-1557913510848"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-39-1557913510848)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 425px; top: 412px;" data-block-id="825179de2f9ddc28454888191ffb5247"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 31;" data-fragment-index="0">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 425px; top: 326px;" data-block-id="19bf58a990e5e86743712a89536c2aeb"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 32;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-40-1557913510853"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-40-1557913510853)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 425px; top: 342px;" data-block-id="b37108f580897219aef69cd99f688b43"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 33;" data-fragment-index="0">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 278px; height: 70px; left: 627px; top: 560px;" data-block-id="7e37922cd7522b0d41c25816895103ea"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 34;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 278 70"><defs><clippath id="shape-mask-43-1557913578297"><rect width="278" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="278" height="70" rx="0" ry="0" clip-path="url(#shape-mask-43-1557913578297)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 278px; left: 627px; top: 576px;" data-block-id="519c52c62a8af91cf3269d75b1b6df5f"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 35;" data-fragment-index="1">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 278px; height: 70px; left: 627px; top: 490px;" data-block-id="b5d7c65f2660fe38a8d120a8c3e99bd2"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 36;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 278 70"><defs><clippath id="shape-mask-44-1557913578309"><rect width="278" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="278" height="70" rx="0" ry="0" clip-path="url(#shape-mask-44-1557913578309)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 278px; left: 627px; top: 506px;" data-block-id="cb83625802e2472bd7fee2ce67d04311"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37;" data-fragment-index="1">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 627px; top: 256px;" data-block-id="0ebe93dd1e223dca6b74d2dc35bb55b3"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 38;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-45-1557913642317"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-45-1557913642317)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 627px; top: 272px;" data-block-id="f4de0eb44df2516f666b58f766227a9b"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 39;" data-fragment-index="2">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 627px; top: 396px;" data-block-id="9700c9ab2f755eca3d1b58da13440027"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 40;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-46-1557913642333"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-46-1557913642333)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 627px; top: 412px;" data-block-id="36d8dc10179cdc6b8c61f088609c300c"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41;" data-fragment-index="2">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 627px; top: 326px;" data-block-id="119bc13fb9e6913290a1c841189fc819"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 42;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-47-1557913642338"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-47-1557913642338)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 627px; top: 342px;" data-block-id="50daac2964875911e807d42d4ac7c706"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 43;" data-fragment-index="2">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 0px; top: 480px;" data-block-id="68657bc09690fcf76dff471c4ae9c78b"><div class="sl-block-content fragment" data-line-x1="-53" data-line-y1="200" data-line-x2="930" data-line-y2="200" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="none" style="z-index: 44;" data-line-width="6px" data-line-style="dashed" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="983" height="1" viewbox="-53 200 983 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-53" y1="200" x2="930" y2="200"></line><line stroke="#ff0000" stroke-width="6" stroke-dasharray="17.87037037037037 17.87037037037037" x1="-53" y1="200" x2="930" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 800px; top: 432px;" data-block-id="135ce2dc5e983f7c009a7615b1b1299c"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 45; color: rgb(255, 0, 0);" data-fragment-index="4">
+<p>NGaF</p>
+</div></div></section><section data-id="228268cf1ccd948e3dd4cd0ae3e35673"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="c1366f561741bf56292eeea459cc24b0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h2>Still heavy?</h2>
+
+<ul>
+	<li>Having a whole VM is sometimes too much
+	<ul>
+		<li>For just one small thing</li>
+		<li>Microservices</li>
+	</ul>
+	</li>
+	<li>You don't always need isolation</li>
+	<li>Booting up a system takes time</li>
+	<li>Useless OS services</li>
+	<li>You have to manage the VM and the OS
+	<ul>
+		<li>Package management</li>
+		<li>Bug and security fixes</li>
+		<li>Kernel updates</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="5cecd86fdb24fec8789fcfdee632d720"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 539px; left: 0px; top: 81px;" data-block-id="b82d5ec00a92ee01c7a3a22b7ae61a98"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="888" data-natural-height="499" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/e32871d41a48518b838c7178a4877ab2.jpg"></div></div></section><section data-id="535c515cd3502fa80b5a28d5ca807d78"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="2eab8f001152d6b660ce4187d2f1bc9a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Containers</h1>
+</div></div></section><section data-id="cfcfe8913516bc7dc21898d265c14ffa"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 893px; height: 700px; left: 33px; top: 0px;" data-block-id="65694a28478fb99df8b8bd1ca90013e5"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="634" data-natural-height="497" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/2e635549cf52368b4a2117c11ff86aeb.jpg"></div></div></section><section data-id="43c93259134496bda08570cc74d5e565"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="fc7f213006a3b860708d8f3a87edf18a"><div class="sl-block-content notranslate" style="z-index: 10; border-width: 14px; font-size: 145%;" data-highlight-theme="zenburn"><pre><code style="padding: 15px;" data-line-numbers="|1,2|4|4,5|7,8|10|10,11|13,14|16,17|19|19,20|22|22,23|">mkdir -p test/bin
+cp `which busybox` test/bin
+
+pwd
+/root
+
+# Enter the chroot environment
+chroot test bin/busybox ash
+
+pwd
+/
+
+# Write something into a file
+echo "Hello world" &gt; file
+
+# Exit the chroot environment
+exit
+
+pwd
+/root
+
+cat test/file
+Hello world</code></pre></div></div>
+</section><section data-id="fb4672ae5b97e4346062631fdd02e2bc"><div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 400px; top: 35px;" data-block-id="6784e326a8bc4baa12cdff40dea05719"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-48-1557930956286"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-48-1557930956286)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 400px; top: 51px;" data-block-id="f1d4bba0aa7478fadc2300eb4a9d1e7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>/</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 40px; top: 210px;" data-block-id="603ecd3c23264d1bcae2c56b5a233890"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-49-1557930984565"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-49-1557930984565)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 40px; top: 226px;" data-block-id="12f3baf41cff3fa0f32cecc6fbeaa82e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>bin</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 280px; top: 210px;" data-block-id="6063110721ac1c718f5dd35081250aa6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-50-1557930994094"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-50-1557930994094)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 280px; top: 226px;" data-block-id="e00cac859289d19c6f4f332bee17be1b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>etc</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 520px; top: 210px;" data-block-id="9522beca0222be534b9d21dd928d4f97"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 16;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-51-1557931006691"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-51-1557931006691)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 520px; top: 226px;" data-block-id="0fa88639123f56d49295f80768993b24"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;" data-fragment-index="0">
+<p>test</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 760px; top: 210px;" data-block-id="d4cb4fb279d383b3c21de0775d594338"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 18;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-52-1557931015149"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-52-1557931015149)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 760px; top: 226px;" data-block-id="700af1442a660fc6386c53e5a39adee0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;">
+<p>root</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 400px; top: 385px;" data-block-id="0443e9ee29d808ccbd3af58edc333b69"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 20;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-53-1557931042892"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-53-1557931042892)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 400px; top: 401px;" data-block-id="a745f2dd236cec7b6acaa9d1426f7c9e"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;" data-fragment-index="1">
+<p>bin</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 640px; top: 385px;" data-block-id="55e89ae47279bc1b4b08b34cf15b1515"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 22;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-54-1557931052442"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-54-1557931052442)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 640px; top: 401px;" data-block-id="9ccf7bf9f66ced4d330789a21d7f1fbf"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;" data-fragment-index="4">
+<p>file</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 400px; top: 561px;" data-block-id="7e07c3a11b69e791614b538f83a86d09"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 24;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-56-1557931083540"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-56-1557931083540)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 400px; top: 577px;" data-block-id="e1087aabe0694fcf6071ca2a508ed7da"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25;" data-fragment-index="2">
+<p>busybox</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 70px; left: 40px; top: 386px;" data-block-id="4455e56cd1c154a436996a14e4cade13"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 26;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-57-1557931093846"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-57-1557931093846)" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 40px; top: 401px;" data-block-id="33fbe7dd4c35aa37b7f425becbf0ef37"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;">
+<p>busybox</p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 480px; top: 105px;" data-block-id="ee3d04280a6ed6890589d606bf4c2a82"><div class="sl-block-content" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-110" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 28;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="70" viewbox="100 -110 1 70"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-110"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-110"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 120px; top: 175px;" data-block-id="5ec679dd1fae72dd346e01a5ee3167c2"><div class="sl-block-content" data-line-x1="-270" data-line-y1="-50" data-line-x2="450" data-line-y2="-50" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 29;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="720" height="1" viewbox="-270 -50 720 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-270" y1="-50" x2="450" y2="-50"></line><line stroke="#000000" stroke-width="2" x1="-270" y1="-50" x2="450" y2="-50"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 120px; top: 175px;" data-block-id="e78ff0798a8cbd9c4192301e0c1ffbb9"><div class="sl-block-content" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-75" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 30;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="35" viewbox="100 -75 1 35"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-75"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-75"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 360px; top: 175px;" data-block-id="3eb795470dea05b973ad8d0c9f3dc4e6"><div class="sl-block-content" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-75" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 31;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="35" viewbox="100 -75 1 35"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-75"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-75"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 600px; top: 175px;" data-block-id="3bf6a9b36444c558aa04d884b0f89f0b"><div class="sl-block-content fragment" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-75" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 32;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="35" viewbox="100 -75 1 35"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-75"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-75"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 839px; top: 175px;" data-block-id="f4e614936daebb37863196e1c8f93562"><div class="sl-block-content" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-75" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 33;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="35" viewbox="100 -75 1 35"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-75"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-75"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 600px; top: 280px;" data-block-id="8cce740768d94bae5c0485591faa1b4f"><div class="sl-block-content fragment" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-110" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 34;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="70" viewbox="100 -110 1 70"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-110"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-110"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 480px; top: 350px;" data-block-id="d87acab508ce710a2bcea3d439e6aa5b"><div class="sl-block-content fragment" data-line-x1="-46" data-line-y1="-50" data-line-x2="74" data-line-y2="-49" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 35;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="120" height="1" viewbox="-46 -50 120 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-46" y1="-50" x2="74" y2="-49"></line><line stroke="#000000" stroke-width="2" x1="-46" y1="-50" x2="74" y2="-49"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 480px; top: 351px;" data-block-id="c1319b58b367afe7791e806ee6e28346"><div class="sl-block-content fragment" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-75" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 36;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="35" viewbox="100 -75 1 35"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-75"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-75"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 720px; top: 351px;" data-block-id="28b7f9da21de439316df8bb465b2a095"><div class="sl-block-content fragment" data-line-x1="100" data-line-y1="-40" data-line-x2="100" data-line-y2="-75" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 37;" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="35" viewbox="100 -75 1 35"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-40" x2="100" y2="-75"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-40" x2="100" y2="-75"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 120px; top: 280px;" data-block-id="5488141590904cdb95d6332ded0bc74f"><div class="sl-block-content" data-line-x1="100" data-line-y1="-5" data-line-x2="100" data-line-y2="-110" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 38;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="105" viewbox="100 -110 1 105"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-5" x2="100" y2="-110"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-5" x2="100" y2="-110"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 479px; top: 456px;" data-block-id="d637d231f9ad6368482ecd3297598b77"><div class="sl-block-content fragment" data-line-x1="100" data-line-y1="-5" data-line-x2="100" data-line-y2="-110" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 39;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="105" viewbox="100 -110 1 105"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="100" y1="-5" x2="100" y2="-110"></line><line stroke="#000000" stroke-width="2" x1="100" y1="-5" x2="100" y2="-110"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 360px; top: 315px;" data-block-id="4e0f0583d4aae24505848b74f264b7e3"><div class="sl-block-content fragment" data-line-x1="-20" data-line-y1="100" data-line-x2="460" data-line-y2="100" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="none" style="z-index: 40;" data-line-style="dashed" data-line-width="4px" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="480" height="1" viewbox="-20 100 480 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-20" y1="100" x2="460" y2="100"></line><line stroke="#ff0000" stroke-width="4" stroke-dasharray="11.7 11.7" x1="-20" y1="100" x2="460" y2="100"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 360px; top: 315px;" data-block-id="8a6bbf0663289519143ee00c35182db9"><div class="sl-block-content fragment" data-line-x1="-30" data-line-y1="90" data-line-x2="-30" data-line-y2="440" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="none" style="z-index: 41;" data-line-style="dashed" data-line-width="4px" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="350" viewbox="-30 90 1 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-30" y1="90" x2="-30" y2="440"></line><line stroke="#ff0000" stroke-width="4" stroke-dasharray="11.266666666666666 11.266666666666666" x1="-30" y1="90" x2="-30" y2="440"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 838px; top: 315px;" data-block-id="0970ff245203978150bb6893bc2a367c"><div class="sl-block-content fragment" data-line-x1="-30" data-line-y1="90" data-line-x2="-30" data-line-y2="440" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="none" style="z-index: 42;" data-line-style="dashed" data-line-width="4px" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="350" viewbox="-30 90 1 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-30" y1="90" x2="-30" y2="440"></line><line stroke="#ff0000" stroke-width="4" stroke-dasharray="11.266666666666666 11.266666666666666" x1="-30" y1="90" x2="-30" y2="440"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 358px; top: 665px;" data-block-id="6d89dd88efb5a444eaeaa0685c2eb0d2"><div class="sl-block-content fragment" data-line-x1="-20" data-line-y1="100" data-line-x2="460" data-line-y2="100" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="none" style="z-index: 43;" data-line-style="dashed" data-line-width="4px" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="480" height="1" viewbox="-20 100 480 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-20" y1="100" x2="460" y2="100"></line><line stroke="#ff0000" stroke-width="4" stroke-dasharray="11.7 11.7" x1="-20" y1="100" x2="460" y2="100"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 600px; top: 351px;" data-block-id="acffa9ac7a4e20467067e4e935ebce97"><div class="sl-block-content fragment" data-line-x1="-46" data-line-y1="-50" data-line-x2="74" data-line-y2="-49" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 44;" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="120" height="1" viewbox="-46 -50 120 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-46" y1="-50" x2="74" y2="-49"></line><line stroke="#000000" stroke-width="2" x1="-46" y1="-50" x2="74" y2="-49"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 113px; left: 839px; top: 626px;" data-block-id="e7d67ac8f48d565e8027d4c916bb1cfe"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 46; color: rgb(255, 0, 0);" data-fragment-index="5">
+<p>NGaF</p>
+</div></div></section><section data-id="74cd2ad7560dac874aab117674a1bbc3"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="a53089e9d4c8ae801471c1b40459099b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h2>Containers</h2>
+
+<ul>
+	<li>Confined environment
+	<ul>
+		<li>Very similar to chroot</li>
+		<li>Privileged or unprivileged</li>
+	</ul>
+	</li>
+	<li>Disk image file
+	<ul>
+		<li>Your stuff + dependencies</li>
+		<li>Base images from container registry</li>
+		<li>Can be built using definition files</li>
+	</ul>
+	</li>
+	<li>Virtual network interface
+	<ul>
+		<li>External network access</li>
+		<li>Can expose services</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="3a544967d57d85b3e8d420267d31b375"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 78px; top: 70px;" data-block-id="716d87a2d7aa93725e22fd106ff822c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h2>Kubernetes</h2>
+
+<ul>
+	<li>Container orchestration platform</li>
+	<li>Run containers on multiple machines</li>
+	<li>
+<strong>Pods</strong>
+	<ul>
+		<li>Smallest units defining a service</li>
+		<li>Container(s), storage, settings</li>
+		<li>Grouped into <strong>services</strong>
+</li>
+	</ul>
+	</li>
+	<li>Highly scalable
+	<ul>
+		<li>Replication</li>
+		<li>Load balancing</li>
+	</ul>
+	</li>
+	<li>You care only about your app</li>
+</ul>
+</div></div></section><section data-id="1011747f3e2c883bae7966715bd0b2c3"><div class="sl-block" data-block-type="shape" style="width: 505px; height: 70px; left: 80px; top: 560px;" data-block-id="bc79679d6131ab5223dcad4d45780396"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 505 70"><defs><clippath id="shape-mask-80-1557932714778"><rect width="505" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="505" height="70" rx="0" ry="0" clip-path="url(#shape-mask-80-1557932714778)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 505px; left: 80px; top: 576px;" data-block-id="8d557c6f96af9f8756b80d56cfeab4b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 505px; height: 70px; left: 80px; top: 490px;" data-block-id="a9f997c0af82653f2ef273219f6322db"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 505 70"><defs><clippath id="shape-mask-81-1557932714785"><rect width="505" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="505" height="70" rx="0" ry="0" clip-path="url(#shape-mask-81-1557932714785)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 505px; left: 80px; top: 506px;" data-block-id="b056f1b548936d55cd8536bdc88407a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 80px; top: 155px;" data-block-id="f048bb05cd1bd8f4c1750ce511af566e"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-82-1557932714790"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-82-1557932714790)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 80px; top: 171px;" data-block-id="e0ef4d343576bac615d1d928cf6115c7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 396px;" data-block-id="51973f44c3bb25f6717dc177966504b7"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 16;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-83-1557932714795"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-83-1557932714795)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 412px;" data-block-id="5a65807ec62f650c942f206ec15443c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 326px;" data-block-id="43a035a732854711cf916c1ad6cd0b91"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 18;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-84-1557932714799"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-84-1557932714799)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 342px;" data-block-id="1d2e1949e9316fe932ca8da0697809d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 396px;" data-block-id="4f3ea40342dc9b9381fabb8d9495d931"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 20;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-86-1557932714806"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-86-1557932714806)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 412px;" data-block-id="81597fc4e0b9ca479b90adafdbdd05d6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 326px;" data-block-id="1bef3dc3e5b715c9a5c00927fa7d9ae5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 22;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-87-1557932714809"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-87-1557932714809)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 342px;" data-block-id="6719c98e4cdf5c1e12e989fab059744c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 425px; top: 155px;" data-block-id="5ef01b19c340ed0cc090835db9749515"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 24;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-88-1557932714812"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-88-1557932714812)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 425px; top: 171px;" data-block-id="4e0186674ab9b4b6338dfec247df5c0e"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;" data-fragment-index="2">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 425px; top: 396px;" data-block-id="cbe362c7f30169064e2a7a3688a52bcd"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 28;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-89-1557932714815"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-89-1557932714815)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 425px; top: 412px;" data-block-id="a3e3a1fe231d26d5190cb0a001243a20"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29;" data-fragment-index="1">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 425px; top: 326px;" data-block-id="accb55f6d25b93cd5c2f17366ffda747"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 30;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-90-1557932714818"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-90-1557932714818)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 425px; top: 342px;" data-block-id="125fc2a689072c745928ff66c13cd822"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 31;" data-fragment-index="1">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 278px; height: 70px; left: 627px; top: 560px;" data-block-id="6f840cc77dc7da51db468c967494ccc5"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 32;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 278 70"><defs><clippath id="shape-mask-91-1557932714822"><rect width="278" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="278" height="70" rx="0" ry="0" clip-path="url(#shape-mask-91-1557932714822)" class="shape-element" fill="rgb(74, 134, 232)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 278px; left: 627px; top: 576px;" data-block-id="dbd417dbe0e6a7b4f84947172afe9dcf"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 33;" data-fragment-index="4">
+<p>Physical Machine</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 278px; height: 70px; left: 627px; top: 490px;" data-block-id="9ec7946bbec4f599cceb6c02ffb41809"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 34;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 278 70"><defs><clippath id="shape-mask-92-1557932714825"><rect width="278" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="278" height="70" rx="0" ry="0" clip-path="url(#shape-mask-92-1557932714825)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 278px; left: 627px; top: 506px;" data-block-id="f8e7888f8ff0562d745aa85dd4796219"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 35;" data-fragment-index="4">
+<p>Operating System</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 627px; top: 396px;" data-block-id="e1ceae62cf35338adbee174725ccb4b6"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(147, 196, 125)" data-shape-stretch="true" style="z-index: 36;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-94-1557932714832"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-94-1557932714832)" class="shape-element" fill="rgb(147, 196, 125)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 627px; top: 412px;" data-block-id="27b7cabd1af7221020e9af4a9d00bfbd"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37;" data-fragment-index="5">
+<p>VM</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 627px; top: 326px;" data-block-id="198079df6a28329a33d0e93624d6ca43"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(246, 178, 107)" data-shape-stretch="true" style="z-index: 38;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-95-1557932714835"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-95-1557932714835)" class="shape-element" fill="rgb(246, 178, 107)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 627px; top: 342px;" data-block-id="3c1887b67d82e7e10971b9ef93d8e06b"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 39;" data-fragment-index="5">
+<p>OS</p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 0px; top: 239px;" data-block-id="51d99938716819328e3890ab0d963179"><div class="sl-block-content fragment" data-line-x1="-53" data-line-y1="200" data-line-x2="930" data-line-y2="200" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="none" style="z-index: 40;" data-line-width="6px" data-line-style="dashed" data-fragment-index="8"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="983" height="1" viewbox="-53 200 983 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-53" y1="200" x2="930" y2="200"></line><line stroke="#ff0000" stroke-width="6" stroke-dasharray="17.87037037037037 17.87037037037037" x1="-53" y1="200" x2="930" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 800px; top: 191px;" data-block-id="8c50ee6bbe0b381f98d15e79c6c83039"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41; color: rgb(255, 0, 0);" data-fragment-index="9">
+<p>NGaF</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 80px; top: 256px;" data-block-id="0d3029a1a0f89d497c0cae80ee9b95e8"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 217, 102)" data-shape-stretch="true" style="z-index: 42;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-96-1557932740997"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-96-1557932740997)" class="shape-element" fill="rgb(255, 217, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 80px; top: 272px;" data-block-id="18f7f04d335fbcba9cf3c39a57524a57"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 43;">
+<p>k8s</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 253px; top: 257px;" data-block-id="466f60ce796956e05aed95aae1c69497"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 217, 102)" data-shape-stretch="true" style="z-index: 44;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-97-1557932755029"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-97-1557932755029)" class="shape-element" fill="rgb(255, 217, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 253px; top: 273px;" data-block-id="c48997a83b53aefa475c26ed8f1465cb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 45;">
+<p>k8s</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 425px; top: 258px;" data-block-id="8a0740fd9444a83b4395e18fe85077a8"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 217, 102)" data-shape-stretch="true" style="z-index: 46;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-98-1557932757651"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-98-1557932757651)" class="shape-element" fill="rgb(255, 217, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 425px; top: 274px;" data-block-id="0d54634e0dbdea39bfbc189f18a27e43"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 47;" data-fragment-index="1">
+<p>k8s</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 160px; height: 70px; left: 627px; top: 257px;" data-block-id="5c03b14f501ab7b9dee707c9ef20a6d6"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(255, 217, 102)" data-shape-stretch="true" style="z-index: 48;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 160 70"><defs><clippath id="shape-mask-99-1557932761606"><rect width="160" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="160" height="70" rx="0" ry="0" clip-path="url(#shape-mask-99-1557932761606)" class="shape-element" fill="rgb(255, 217, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 160px; left: 627px; top: 273px;" data-block-id="83e359da9e9d8f93ff232f1d130c3950"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 49;" data-fragment-index="5">
+<p>k8s</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 170px; top: 155px;" data-block-id="2a973bcb1f025a266cee116e58b0b672"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 50;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-100-1557932787204"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-100-1557932787204)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 170px; top: 171px;" data-block-id="8417e681351bf30f4a0f893dbe37654e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 51;">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 253px; top: 155px;" data-block-id="f779c55e8b3bf342bf2cb5175ea5de7b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 52;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-101-1557932807878"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-101-1557932807878)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 253px; top: 171px;" data-block-id="f26f6ebb309fa2a5cf376dd9dc2c1e60"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 53;">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 515px; top: 155px;" data-block-id="3ba953175af23fd44d11e9dcde49c00e"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 54;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-103-1557932845540"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-103-1557932845540)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 515px; top: 171px;" data-block-id="e7d2e86750dff71af8206feba550f8b5"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 55;" data-fragment-index="3">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 627px; top: 155px;" data-block-id="e9cc7430b4199b9cca96a139678d16e2"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 56;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-104-1557932855101"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-104-1557932855101)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 627px; top: 171px;" data-block-id="4b20ff4cfce28da90275d0d4ef74ed9d"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 57;" data-fragment-index="6">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 717px; top: 155px;" data-block-id="3f21d9e8453526d7c08ee3db61ce3fdb"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 58;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="7"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-105-1557932855115"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-105-1557932855115)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 717px; top: 171px;" data-block-id="9f0a38b56a08d23e4e804a79ee4b8232"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 59;" data-fragment-index="7">
+<p>App</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 70px; height: 70px; left: 343px; top: 155px;" data-block-id="9dbd2eee005a167014f600fe56d302f9"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 60;" data-shape-stroke-color="#000000" data-shape-stroke-width="2px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 70 70"><defs><clippath id="shape-mask-106-1557932867221"><rect width="70" height="70" rx="0" ry="0"></rect></clippath></defs><rect width="70" height="70" rx="0" ry="0" clip-path="url(#shape-mask-106-1557932867221)" class="shape-element" fill="rgb(224, 102, 102)" stroke="#000000" stroke-width="4"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 70px; left: 343px; top: 171px;" data-block-id="e4ab68b79e1c5ec3f298d53cb9701f31"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 61;" data-fragment-index="0">
+<p>App</p>
+</div></div></section><section data-id="4a3ff4ba5b56709c38920eef4e964a17"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1285px; height: 700px; left: -163px; top: 0px;" data-block-id="db164e081c6fe36bb6578bd93a27f14b"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="512" data-natural-height="279" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/640c517d57dc72e3353563b8c6fcb89b.jpg"></div></div></section><section data-id="cabf97612f104031351b986779348403"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="3700151ba174575880a6d14b8249f1a0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Serverless</h1>
+</div></div></section><section data-id="12e9a2b342f135109784b88cba1d8d42"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 863px; height: 700px; left: 49px; top: 0px;" data-block-id="ab1cb07ec7704705e059e2fd8476b1a2"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="555" data-natural-height="450" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/bb6e59a133958060b761a295133d5fca.jpg"></div></div></section><section data-id="68f33fae371e20d89d96f3d717273e5c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="6c67e09d2219c263f957f78a2e28fc7c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Isolated<br>
+function calls</h1>
+</div></div></section><section data-id="4d6ba38ade07fdf9d28473fd3c6d964c"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="d3faad99e07e957a944a212d6ed4e265"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h2>Serverless</h2>
+
+<ul>
+	<li>Invoke functions via
+	<ul>
+		<li>Incoming HTTP requests</li>
+		<li>Timers</li>
+		<li>Other functions</li>
+	</ul>
+	</li>
+	<li>It actually needs a server
+	<ul>
+		<li>Create the server</li>
+		<li>Call the function</li>
+		<li>Kill the server</li>
+	</ul>
+	</li>
+	<li>Pay per function call
+	<ul>
+		<li>Used memory * time</li>
+		<li>Scales very well</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="23b9ee21877bea541c8ead7e0d940954"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="f21f3a65954b23b41bde03df7d19b14a"><div class="sl-block-content notranslate" style="z-index: 10; font-size: 190%; border-width: 14px;" data-highlight-theme="zenburn"><pre><code style="padding: 15px;">// Load the package for sending mails
+const sendmail = require('sendmail')();
+
+// This is the function that gets called
+export default function (event, context) {
+
+  // If the event is a merged pull request
+  if (event.type == 'pull_request_merge') {
+    // Send an e-mail about it
+    sendmail({
+      from: 'noreply@openlabs.cc',
+      to: 'oscal@openlabs.cc',
+      subject: 'PR merged',
+      html: 'Your PR got merged! ',
+    });
+  }
+}
+</code></pre></div></div>
+</section><section data-id="05d3c032c56a2d50df7de3e293523fd8"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="b0ae4fd4e7de77e9da03f0008aba99bc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>Function as a Service</h1>
+</div></div></section><section data-id="9d280d6f390add5e3ebc5121540f0a45"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="6ba6a07fcd8ab536be649818c654ee5d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>Can we go deeper?</h1>
+</div></div></section><section data-id="7c6c6488e66ad8df78e20b4c396b236c"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 733px; left: 0px; top: -16px;" data-block-id="d0b3984d4a37c34d7bdc1119ab1483f5"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1440" data-natural-height="1099" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/87b2b4829e4f6cac0a0a67588c0c45d6.png"></div></div></section><section data-id="76b1e7681bcbebbdbab5fd7b637b05ae"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="d34ba4a97887aec6a5b7b8adc6625c76"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>What did I miss?</h1>
+</div></div></section><section data-id="c11ed2e1d2246ec0333a71913c0ceb25"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="834824c349f3be6fabdbcfdb85eeef62"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>A lot!</h1>
+</div></div></section><section data-id="1af5c51d113ba7b2d7a08ce881c6ab1c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 253px; height: auto;" data-block-id="0a012f792a22f2c6c15cd23d75b47415"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11;">
+<h1>This was just an introduction</h1>
+</div></div></section><section data-id="8484224234ed6b7bcef9a28a90a1a881"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="f174c25398ba149e5f603912b031059d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h2>Things to take home</h2>
+
+<ul>
+	<li>
+<span style="color:rgb(53, 64, 69)">The cloud is not</span>
+
+	<ul>
+		<li><span style="color:rgb(53, 64, 69)">​simple</span></li>
+		<li><span style="color:rgb(53, 64, 69)">magic</span></li>
+		<li><span style="color:rgb(53, 64, 69)">evil</span></li>
+	</ul>
+	</li>
+	<li>The cloud is
+	<ul>
+		<li>a collection of services</li>
+		<li>a hype</li>
+		<li>like onions</li>
+	</ul>
+	</li>
+	<li>The cloud can be
+	<ul>
+		<li>completely open-source</li>
+		<li>your best friend</li>
+		<li>your worst enemy</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="d322be55c6d045078a95a5bf8cef7191"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 540px; left: 0px; top: 81px;" data-block-id="ff196bc7a2eddb9f2ca3cd1f99ee5617"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="854" data-natural-height="480" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/c22522103e5b4ddfd5247b556bf022b9.gif"></div></div></section><section data-id="8a91513a668ce7bf19025f34b6459cb1"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="6559f4be8f2d00eefcc0729618885125"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>_____ as a Service</h1>
+</div></div></section><section data-id="3612e5139824072d3f51ff40696ebff8"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="7c6e1fb494e2d9d6d5d22229e812e41b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Service as a Service</h1>
+</div></div></section><section data-id="e8372e0b18ff93bd040e32224ea859c3"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="2e04efe36109bcdb2bdbc4adac778778"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Hype as a Service</h1>
+</div></div></section><section data-id="d55cf634320a351ab9d7b227c678ae24"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 302px; height: auto;" data-block-id="b6ac335bdead614bb3c53b053a6369b4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>David at your Service</h1>
+</div></div></section><section data-id="8a811226c542b9d3194eb4cd3b07641c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 70px; height: auto;" data-block-id="242406498e256f8b14f6a5144b5f32ee"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10;">
+<h1>Thank you!</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 174px; height: 161px; left: 160px; top: 239px;" data-block-id="42bf111d4f7360d2a81c749c7da1ecb6"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="999" data-natural-height="922" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/ecbff2367da6b9e793a593a743e2c586.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 210px; height: 210px; left: 615px; top: 210px;" data-block-id="166f4d508ccf6ef8203ad2095919a28b"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1000" data-natural-height="1000" data-lazy-loaded="" data-src="the-decloudification-of-the-cloud/93689e774cd195e6520928088ebf81b9.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 240px; top: 420px;" data-block-id="624bcab1034bf4508ccbcde917dbfd56"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 90%;">
+<h3>Dávid Halász</h3>
+
+<p>dhalasz@redhat.com<br>
+Twitter: halaszdavid<br>
+Github: skateman<br>
+www.skateman.eu</p>
+
+<p><span style="font-size:0.5em">I have some stickers of George and Purr</span></p>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1495391,"slug":"the-decloudification-of-the-cloud","title":"The decloudification of the Cloud","description":"","width":960,"height":700,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/e09f0baf0ea35210d7f777f335944e9a/thumb.jpg?1557948580","view_count":0,"user":{"id":313481,"username":"dhalasz","name":"Dávid Halász","description":"","thumbnail_url":"https://www.gravatar.com/avatar/0fd95585fde74d1fab7f98cd47d403c2?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":true,"lite":false,"team_id":32,"settings":{"id":142307,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null},"enterprise":true,"membership":{"role":"member","manager":false,"activated":true}},"background_transition":"none","transition":"none","theme_id":null,"theme_font":"montserrat","theme_color":"sky-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":74,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1558168335529,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{"8bf886c1c4c4bfc045dc7a79d03cb046":"","323023b10f2e28f91d54e02b34bcdc6d":"","3fc5e8b6e2a61d74d519ddcb59b4be91":"","31c21fafb204731d6000c5fd69b3f3ff":"","9d28fa5adf29df77a1a25c98c49ad265":"","c06945b26cd9c781ce9d529bbf294641":"When you depend on resources but you actually don't care about their management or maintenance.\nAs you don't care, it can be totally cloudy for you how things happen...","8e843f58d68dc041a6babe8631d26e8e":"","4dcc4e3aaace19ffe229519fc71d1524":"","9a166a90ad0d639355c438b406c12615":"","8f6dd0574f275bdf4f2b51833793cdeb":"","54da352d40b2e812fe4acba5c3ce38dc":"","136c8bbb27533178397dbf4c75d6ef55":"","46fac575f53805084e23cf85cf7a8c09":"","763f1576af4fdb58f3a6c26e67c849a6":"","8e052780eccb0cefbcf17dbcfb96efed":"","4b7ba7153eeea7c461a2d41648f0f367":"","b951a1176fec3a556ab9ca4467febdc6":"","ae9086bba5a35e6ddbfd74b3dfd580f1":"","ead3773f1d44821d303f0c4f392622ea":"","fbc395673becca7ae9e4990a59498d7a":"","ad08c64a463376179b32d46d2ba7b72c":"","effedace61f623bc512e85ec6994eca7":"","c4b590bdd9094616db7fbb98623df51c":"","9834168637312de1505272effcf9373c":"","c5b8137f0faae5aabe41d083e7421857":"19th century","2443697c7080a12e84f5b38d0625ab87":"","271a5e7485a9b367523385cbc3c47ede":"","fa8efcbebba39fd4e649088de225c7b9":"","6700efd59ce20cd86259510048e2a721":"","dc2e59aedcbd03930aa507cc6e3020b2":"","62ac9ca0a8b7ef8e38558c4caa229dee":"","7e19ecbea83dfde9e051c6a7832797db":"","2c78861cb939d34c5333e652ea135e93":"","9d6d5b81358b0cb5d147870a8b0bb995":"","9777c1985cdc1a0f9dbdd08dec309c81":"","485fe4f6a2a3308f81552e4f3e51b337":"","93939b68207a289ee9bc1e10c7e3afe3":"","0d11e55e8abb70c80f64c0db1131a536":"Here's a lightbulb, to operate it we:\n* can pedal a bicycle\n* have a diesel generator\n\nbut both of them require too much effort compared with the outcome","600cd9e16a4bdcc885c3db2acd267af7":"This is why we have power plants that create energy that is being shared among multiple users","b59bfb2c6e1f15985f0534a93043b02e":"And delivered via a global power grid","4a9e25617b6ae29760babd9c48b43a78":"And you pay for the amount of electricity consumed","8e96e4382d9b3721f49cadc861a977ea":"So I'm gonna illuminate you all","2f77686dc0694e96d17216a9382073b4":"","3f3b59d3c4b90a208635740fb3feb1f1":"","e5a3123fc00195ee79ab8d058c94bffe":"","8f9f1b1c6ff3c69526d438a6ca0afc28":"","0de2b169aaff9928a9ff768db5bf4cbd":"","10429d4213f97d2b11af2c6c9035691e":"","231de0b1ff8e088600536090733125a6":"","ffe2e66575d987ee60933b8cf0296d11":"","17af162f1784f8165669f4e0de98a7eb":"Instead of power plants, imagine huge datacenters big enough to serve thousands of users","23fb0a3c0503eaffc26e5210a6e04b54":"A global infrastructure that makes these datacenters accessible","25baaa917c073dd5df6d1e613a72eef1":"","4cf10d9b7f75c9b521d28e31d6fd5376":"","9791f33c73f103ebde6cfbc02e8aca76":"","c27555684d07f30c0ac066a5b4421241":"And you are being charged based on how much of these resources you actually used","56bb445e627c8734c1f370723eed4b5b":"","93dbdba37f54580e661f708bdaaa2b3d":"","b063cb5f66e2dd87b51295198307390d":"","600f0163cb8445e37598370e03759e3a":"","a0961f8bdb153db28ffae4cf7a29297c":"","c88a4e4113eb872c7b7a68011c5c9bbd":"","b0440cda1e299667c01be48ae98eb6e9":"","ecaeef1b6f03ceb9a07c2c4c697772fe":"","a33a5d974c94791482270fc63aafda6e":"","7d54a2cf26b1855726a931a256b9ddfb":"","bc3c95f30153dda4a1c6267b402b15a5":"","1b7b187624ce786d586b94b0e225e385":"","4294bf68069c5bcc77f090caf3c94ba5":"This isn't really nice, you need to do physical work to actually scale up or down your services.\nAlso when you buy hardware, you might not need it all the time so it's a waste of resources.","99491004e1e62c832c50e65f48687d53":"This is an artistic explanation of a Turing machine, which is a mathematical model of a computer.\n* you have a tape of memory with instructions\n* a head that is able to move, read and write on this tape\n* and some kind of logic that moves the tape based on the instructions read by the head","a9dc0135fa6a9cf6d5e5ec4571907740":"","a526358cffa5674403fd822bbe16ad49":"","59216a9715373eef3278ce4cfa8061a1":"","f742b1312f8220407712b33e4da42011":"You'll end up with a virtual machine that simulates the run of a physical one.","857b38819e440ef072288e1aa54fc1bf":"","dd0de1495278115fdeb141e2e3c1de06":"There are some r","fadd5e39432a218389ce2ee4a6b452f4":"","b3da45abd8fadd41042738d580b99b01":"","228268cf1ccd948e3dd4cd0ae3e35673":"You still have to manage the operating system in your VMs, so it would be better to get rid of it.","cfcfe8913516bc7dc21898d265c14ffa":"In UNIX there's a command called chroot, which allows you to change your root directory for a given program.","85357499fb98b2c898ab87cdea3e4bdd":"","e3a7dd853948da468a925e70cb25b123":"","85fcec00e8b5364aca01a66be2628914":"","41e9e0feec242931f122bf837707854a":"","8d39c944d51e5d618a239f2ed65903cd":"","4a3ff4ba5b56709c38920eef4e964a17":"","97377356190a5e57c69cfc2f236df73d":"","9d280d6f390add5e3ebc5121540f0a45":"","ae0d9131b4005c2346e8a0cdc70e29bc":"","f3324668d9dcd444af71a055a0b36801":"","a9c87a5fdbf7880d77dd4da24908aedd":"","f5768d54e42dba3f6360f1142e35c356":"A sneak peek of this \"tape\" can be the code that a machine understands, for example like this.\nWhen the computer is reading these instructions, it goes line by line through them, very similarly to a Turing machine.\nYour programming code is translated to these kind of instructions and there's a piece of electronics in your computer that actually understands these things.\n\nBUT it is also possible to (instead of the electronics) write a program that also understands this kind of code.\nWhen you compile this program, it will become machine code ... so","d8858aaa50456f04d64915c69307e053":"","52c7f1a1cdcaee277a0da2605efe8bd4":"","982db196a8e5fac91e45efec6a8b547e":"","b41969bca89e16bf86828b24c0b93947":"","926b9c12433252fc5e0d58cf2e692293":"","8de9c5a782442d5a92ff8a76b8906fe2":"","cfd87536da1c878ba44a2794f752c8d0":"To be able to make this better, first you have to understand what a computer is.","9608c15b4f5ceecb6500026a5f936c38":"","535c515cd3502fa80b5a28d5ca807d78":"Containers, which are small isolated environments running inside an operating system that can be managed by someone else.\n\nTo understand them you should first know where did they come from.","5cecd86fdb24fec8789fcfdee632d720":"Anyway, what the 2nd operating system is giving us over the first one that is managed by someone else?\nA solution for this are","43c93259134496bda08570cc74d5e565":"","fb4672ae5b97e4346062631fdd02e2bc":"","e5fc2d804c7881664011e5c2fca05c9e":"","74cd2ad7560dac874aab117674a1bbc3":"","33b3b2d80fc99496498c1676ef8e2818":"","1011747f3e2c883bae7966715bd0b2c3":"","9d802947c8909f2ebfca24ea909894cc":"","4b2201b65d97d0528df95dcc0d693e5d":"","05d3c032c56a2d50df7de3e293523fd8":"","3a544967d57d85b3e8d420267d31b375":"","2e094a2658aae6fef97ea5d3bf143960":"","23b9ee21877bea541c8ead7e0d940954":"","9f5060862b6778cb1031cbf20f197513":"","4d6ba38ade07fdf9d28473fd3c6d964c":"","cabf97612f104031351b986779348403":"","12e9a2b342f135109784b88cba1d8d42":"","7c6c6488e66ad8df78e20b4c396b236c":"","76b1e7681bcbebbdbab5fd7b637b05ae":"","c11ed2e1d2246ec0333a71913c0ceb25":"","1af5c51d113ba7b2d7a08ce881c6ab1c":"","8484224234ed6b7bcef9a28a90a1a881":"","d322be55c6d045078a95a5bf8cef7191":"Cloud has layers, but you don't actually have to care about all of them, just the top ones where your apps run.","8a91513a668ce7bf19025f34b6459cb1":"So the idea is to provide stuff as a service, managed by your vendor instead of you, while you can focus more on your app.","e8372e0b18ff93bd040e32224ea859c3":"","2e834d43bdb4cc8839349c41063acd76":"","3612e5139824072d3f51ff40696ebff8":"","ca37d588bfd055d8507fbbe3c45336fd":"","d55cf634320a351ab9d7b227c678ae24":"","8a811226c542b9d3194eb4cd3b07641c":"","6cc08d548419d0be031fda2675324836":"","932288ce2876ab551334db2118306554":"","c4d051a13d114cfea1f8e17ebef03dc4":"","c38367efc7c39fbc57dc09566ecd345c":"","160344ae9664563faa2be9511cba1d08":"","f75c5b07b8ab828c967c39e108db23cd":"","68f33fae371e20d89d96f3d717273e5c":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "none",
+				backgroundTransition: "none",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js' },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/reveal-plugins/zoom/zoom.js', async: true }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
