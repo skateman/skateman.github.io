@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Dr Strangecode</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+		<!-- Team CSS -->
+		<style id="global-css-output" type="text/css">
+			@import url("https://s3.amazonaws.com/static.slid.es/fonts/overpass2/overpass2.css");
+.reveal {
+  
+
+  /*fix icon inversion*/
+
+}
+.reveal svg,
+.reveal text,
+.reveal tspan,
+.reveal svg text {
+  font-family: "Overpass 2", Overpass, sans-serif !important;
+  color: currentcolor;
+  fill: currentcolor;
+}
+.reveal .sl-block {
+  color: #354045;
+  fill: currentcolor;
+}
+.reveal .sl-block svg {
+  color: currentcolor;
+}
+.reveal .has-dark-background,
+.reveal .has-dark-background > .sl-block {
+  color: white;
+  fill: currentcolor;
+}
+.reveal section > .sl-block .redhat-logo .logotext {
+  fill: #000000;
+}
+.reveal .has-dark-background > .sl-block .redhat-logo .logotext {
+  fill: #ffffff;
+}
+.reveal .has-dark-background > .sl-block[data-block-type="image"] {
+  color: #ffffff;
+}
+.reveal [fill="none"] {
+  fill: none !important;
+}
+.reveal [fill="#a30000"] {
+  fill: #aa0000 !important;
+}
+.reveal [fill="#cc2029"],
+.reveal [fill="#cb2027"],
+.reveal [fill="#c00"] {
+  fill: #cc0000 !important;
+}
+.reveal [fill="#fff"] {
+  fill: #ffffff !important;
+}
+.reveal [fill="#6d6e70"] {
+  fill: #6d6e70 !important;
+}
+.reveal [fill="#231f20"] {
+  fill: currentcolor !important;
+}
+.reveal [fill="#efab1f"] {
+  fill: #efab1f !important;
+}
+.reveal [fill="#92d400"] {
+  fill: #92d400 !important;
+}
+.reveal .has-dark-background [fill="#6d6e70"] {
+  fill: #266272 !important;
+}
+.reveal .has-dark-background [fill="#fff"] {
+  fill: #555555 !important;
+}
+.reveal .has-dark-background [fill="#fff"] {
+  fill: #333333 !important;
+}
+.reveal .has-dark-background [stroke="#231f20"] {
+  stroke: currentcolor;
+}
+.reveal [data-inline-svg="true"] img {
+  display: none;
+}
+
+		</style>
+
+
+	</head>
+	<body class="reveal-viewport theme-font-opensans theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="cea876700f3847ab8db55bffd51e83c6"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 232px;" data-block-id="ba3e44e0130e12a9c57bbf361bb0ba2b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>Dr. Strangecode</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 329px;" data-block-id="17f0629bfbd7b5cceb053bad93ff330b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>or: How I learned to Stop Worrying and Love Refactoring</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 240px; left: 640px; top: 552px;" data-block-id="101ca02665e9310209da39e936cae337"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Dávid Halász</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 240px; left: 640px; top: 591px;" data-block-id="ec11f30bac0ddcb031466fe3ac9a7cb6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>RubyRussia 2019</p>
+</div></div></section><section data-id="d77e98905ad1bdba9d538a508db1d1b6"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 253px;" data-block-id="b4754c396fc2e2ff5676f5aa02a9f8f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>Рад снова быть здесь</h1>
+</div></div></section><section data-id="ce5fa4d026447229c14fd9d3c8859ca9"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 872px; height: 700px; left: 45px; top: 0px;" data-block-id="5a56adfaece5f97626520337772b7d5e"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1682" data-natural-height="1350" data-lazy-loaded="" data-src="strangecode-moscow/db95e1c4d0727a56dda82838e1450275.jpg"></div></div></section><section data-id="aa029cdc08c8a82c14b7a22616059140"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 933px; height: 700px; left: 15px; top: 0px;" data-block-id="11b96fe902f448c843dc930ada16fdb8"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1800" data-natural-height="1350" data-lazy-loaded="" data-src="strangecode-moscow/572fde23d3248f07380a0c2c4aaf82fe.jpg"></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 116px; height: 291px; left: 301px; top: -93px;" data-block-id="e295dee94ddbc9c3ba0cac30bca0e1e8"><div class="sl-block-style" style="z-index: 12; transform: rotate(59deg);"><div class="sl-block-content fragment" data-shape-type="arrow-down" data-shape-fill-color="rgb(0, 0, 255)" data-shape-stretch="true" style="z-index: 12;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 116 291"><polygon points="58,291 116,145.5 81.19999999999999,145.5 81.19999999999999,0 34.8,0 34.8,145.5 0,145.5 58,291" class="shape-element" fill="rgb(0, 0, 255)"></polygon></svg></div></div></div></section><section data-id="d9b4ed329dd094fb7422f79835d9c061"><div class="sl-block" data-block-type="image" style="width: 356px; height: 237px; left: 80px; top: 71px; min-width: 4px; min-height: 4px;" data-block-id="89389903050d539165e0445f00d69f60"><div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="2"><img style="" data-natural-width="1920" data-natural-height="1280" data-lazy-loaded="" data-src="strangecode-moscow/167cf7594397698c3dfafaa48aa75acb.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 353px; height: 82px; left: 527px; top: 148px; min-width: 4px; min-height: 4px;" data-block-id="67badb10b39764810f2938f0f4d4e2cd"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="3"><img data-natural-width="1000" data-natural-height="232" style="" data-lazy-loaded="" data-src="strangecode-moscow/596b8cab8a67ab3ac3b934829b664dbd.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 160px; height: 293px; left: 80px; top: 350px; min-width: 4px; min-height: 4px;" data-block-id="1647c042c0114bf0856bd201ed0880a4"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="4"><img style="" data-natural-width="230" data-natural-height="420" data-lazy-loaded="" data-src="strangecode-moscow/de3a5c3bd235556ca028e9950d92616f.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 370px; height: 213px; left: 510px; top: 384px; min-width: 4px; min-height: 4px;" data-block-id="eba41d8b54d1ffbcc747718d8654b4bf"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="5"><img style="" data-natural-width="640" data-natural-height="368" data-lazy-loaded="" data-src="strangecode-moscow/7f455dfcac4601347474bb6e8a48500f.png"></div></div>
+
+
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 356px; height: 237px; left: 80px; top: 70px;" data-block-id="1abe9f4f07ec34463ef62169ec947588"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0"><img style="" data-natural-width="900" data-natural-height="600" data-lazy-loaded="" data-src="strangecode-moscow/e0c05da2c80916a75983d6c8240311aa.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 356px; height: 237px; left: 80px; top: 70px;" data-block-id="b3b6558d1a8c7a57d3ce7192b6d67b6a"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="1"><img style="" data-natural-width="900" data-natural-height="600" data-lazy-loaded="" data-src="strangecode-moscow/8079558b10cc3f4cf85324e3311bc2fe.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 511px; height: 580px; left: 449px; top: 24px;" data-block-id="70ab76daf5f84f786374b5d60c84e9f1"><div class="sl-block-content fragment" style="z-index: 17;" data-fragment-index="7"><img style="" data-natural-width="839" data-natural-height="952" data-lazy-loaded="" data-src="strangecode-moscow/087939b5b34bbd1e76020bcd9a1d4417.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 330px; height: 500px; left: 0px; top: 200px;" data-block-id="90b41f8e852c0ea9c21db8c429d69500"><div class="sl-block-content fragment" style="z-index: 18;" data-fragment-index="6"><img style="" data-natural-width="330" data-natural-height="500" data-lazy-loaded="" data-src="strangecode-moscow/0b99cd195fe5d60a3859e963fcb6aa1f.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 389px; height: 518px; left: 47px; top: 0px;" data-block-id="931d1a523dec431ea56e2d1e1613c040"><div class="sl-block-content fragment" style="z-index: 19;" data-fragment-index="8"><img style="" data-natural-width="768" data-natural-height="1024" data-lazy-loaded="" data-src="strangecode-moscow/64012b65ed2b47434582f3e919f90ed7.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 640px; left: 0px; top: 30px;" data-block-id="1fb0496721c5ab811bdbd21d9963fa10"><div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="9"><img style="" data-natural-width="750" data-natural-height="500" data-lazy-loaded="" data-src="strangecode-moscow/e23fe32af161b95c77c49d1c2c7b1671.png"></div></div></section><section data-id="74fcdc9bc567b05b2fc7fe101131d169"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 606px; height: 700px; left: 177px; top: 0px;" data-block-id="94a623b2fe3d91c96a022056a3ceb3c9"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1169" data-natural-height="1350" data-lazy-loaded="" data-src="strangecode-moscow/40c637e63246672188f37d1b7a82e66a.jpg"></div></div></section><section data-id="ddca782d84db1b5daa303fd99d7b814a"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 579px; left: 0px; top: 60px;" data-block-id="32b91772a593e5e8a256637c0dbd695b"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="2237" data-natural-height="1350" data-lazy-loaded="" data-src="strangecode-moscow/4f207837baf058df14e228d22d94d1ac.jpg"></div></div></section><section data-id="b49564e7d76e0018e50224f6a260f072"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 575px; left: 0px; top: 62px;" data-block-id="03bcdbe55197ed91b524f394eeb2bb90"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0"><img style="" data-natural-width="2048" data-natural-height="1226" data-lazy-loaded="" data-src="strangecode-moscow/21cb6a096e435d8324bd74a1aa24c883.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 302px;" data-block-id="8bb78183b212aa7a381b2bbcff8c7b33"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h1>2010</h1>
+</div></div></section><section data-id="6655f34713ecc9d30e0756cdbf1b3c83"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 606px; height: 700px; left: 177px; top: 0px;" data-block-id="bc96669bf5d606c7b521965fd0a47b2d"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0"><img data-natural-width="500" data-natural-height="578" style="" data-lazy-loaded="" data-src="strangecode-moscow/58298a76e5261b1ee47222082dacc6da.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 302px;" data-block-id="63852569d3cb3c0b9fa53e2bc60cc315"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h1>2012</h1>
+</div></div></section><section data-id="fc872db5a5868b6dd0b9045632c576f3"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="261a4643730bd16467c6f9b3aa628cf8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h1>rails new<br>
+rails generate</h1>
+</div></div></section><section data-id="c7629c7cecd1c6f8df38b0d916479b2b" data-background-color="#000000"><div class="sl-block" data-block-type="snippet" style="width: 869px; height: 700px; left: -389px; top: 0px;" data-block-id="9ae85cead1799c99e31bc117b7f34425">
+    <div class="sl-block-content" data-has-custom-html="" style="z-index: 11;">
+        <svg class="closing-logo logotype" width="494" height="180" viewbox="0 0 613 145" style="position:absolute; top:0; bottom: 0%; height: 100%; width: 100%; left:0: right:0;">
+            <g>
+                <path class="logotext" style="fill:white" d="M579.74,92.8c0,11.89,7.15,17.67,20.19,17.67a52.11,52.11,0,0,0,11.89-1.68V95a24.84,24.84,0,0,1-7.68,1.16c-5.37,0-7.36-1.68-7.36-6.73V68.3h15.56V54.1H596.78v-18l-17,3.68V54.1H568.49V68.3h11.25Zm-53,.32c0-3.68,3.69-5.47,9.26-5.47a43.12,43.12,0,0,1,10.1,1.26v7.15a21.51,21.51,0,0,1-10.63,2.63c-5.46,0-8.73-2.1-8.73-5.57m5.2,17.56c6,0,10.84-1.26,15.36-4.31v3.37h16.82V74.08c0-13.56-9.14-21-24.39-21-8.52,0-16.94,2-26,6.1l6.1,12.52c6.52-2.74,12-4.42,16.83-4.42,7,0,10.62,2.73,10.62,8.31v2.73a49.53,49.53,0,0,0-12.62-1.58c-14.31,0-22.93,6-22.93,16.73,0,9.78,7.78,17.24,20.19,17.24m-92.44-.94h18.09V80.92h30.29v28.82H506V36.12H487.93V64.41H457.64V36.12H439.55ZM370.62,81.87c0-8,6.31-14.1,14.62-14.1A17.22,17.22,0,0,1,397,72.09V91.54A16.36,16.36,0,0,1,385.24,96c-8.2,0-14.62-6.1-14.62-14.09m26.61,27.87h16.83V32.44l-17,3.68V57.05a28.3,28.3,0,0,0-14.2-3.68c-16.19,0-28.92,12.51-28.92,28.5a28.25,28.25,0,0,0,28.4,28.6,25.12,25.12,0,0,0,14.93-4.83ZM320,67c5.36,0,9.88,3.47,11.67,8.83H308.47C310.15,70.3,314.36,67,320,67M291.33,82c0,16.2,13.25,28.82,30.28,28.82,9.36,0,16.2-2.53,23.25-8.42l-11.26-10c-2.63,2.74-6.52,4.21-11.14,4.21a14.39,14.39,0,0,1-13.68-8.83h39.65V83.55c0-17.67-11.88-30.39-28.08-30.39a28.57,28.57,0,0,0-29,28.81M262,51.58c6,0,9.36,3.78,9.36,8.31S268,68.2,262,68.2H244.11V51.58Zm-36,58.16h18.09V82.92h13.77l13.89,26.82H292l-16.2-29.45a22.27,22.27,0,0,0,13.88-20.72c0-13.25-10.41-23.45-26-23.45H226Z"></path>
+            </g>
+        </svg>
+        <svg class="closing-logo icon" width="494" height="180" viewbox="0 0 613 145" preserveaspectratio="xMminYmin meet" style="position:absolute; top:0;width: 100%;  bottom: 0%; height: 100%; left:0: right:0;">
+            <g>
+                <path style="fill:#e00;" d="M127.47,83.49c12.51,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42l-7.45-32.36c-1.72-7.12-3.23-10.35-15.73-16.6C124.89,8.69,103.76.5,97.51.5,91.69.5,90,8,83.06,8c-6.68,0-11.64-5.6-17.89-5.6-6,0-9.91,4.09-12.93,12.5,0,0-8.41,23.72-9.49,27.16A6.43,6.43,0,0,0,42.53,44c0,9.22,36.3,39.45,84.94,39.45M160,72.07c1.73,8.19,1.73,9.05,1.73,10.13,0,14-15.74,21.77-36.43,21.77C78.54,104,37.58,76.6,37.58,58.49a18.45,18.45,0,0,1,1.51-7.33C22.27,52,.5,55,.5,74.22c0,31.48,74.59,70.28,133.65,70.28,45.28,0,56.7-20.48,56.7-36.65,0-12.72-11-27.16-30.83-35.78"></path>
+                <path style="fill:#000;" d="M160,72.07c1.73,8.19,1.73,9.05,1.73,10.13,0,14-15.74,21.77-36.43,21.77C78.54,104,37.58,76.6,37.58,58.49a18.45,18.45,0,0,1,1.51-7.33l3.66-9.06A6.43,6.43,0,0,0,42.53,44c0,9.22,36.3,39.45,84.94,39.45,12.51,0,30.61-2.58,30.61-17.46a14,14,0,0,0-.31-3.42Z"></path>
+            </g>
+        </svg>
+    </div>
+</div></section><section data-id="47f5e546e47f10604be8b46114465058"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 525px; height: 700px; left: 218px; top: 0px;" data-block-id="414cd8c367fd2e781a718e739a195629"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="720" data-natural-height="960" data-lazy-loaded="" data-src="strangecode-moscow/3518526dc2e5ae1b367349a0b88325ef.jpg"></div></div></section><section data-id="5ab08591bbc157bdce049a21792fa70e" data-background-color="#ffffff"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 236px; left: 0px; top: 232px;" data-block-id="accbc66e59e4fe3e0fbfd25dff2a4d8e"><div class="sl-block-content" style="z-index: 10;" data-inline-svg="false"><img style="" data-natural-width="244" data-natural-height="60" data-lazy-loaded="" data-src="strangecode-moscow/e3ec22079fbb7172dd35a3deba085b0f.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 152px; height: 140px; left: 724px; top: 490px;" data-block-id="5fba1fda04c69fa8e2355e4a998cd737"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="999" data-natural-height="922" data-lazy-loaded="" data-src="strangecode-moscow/ecbff2367da6b9e793a593a743e2c586.png"></div></div></section><section data-id="ee3c3affeb6b5418162c31efd559c73e"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 343px; left: 0px; top: 178px;" data-block-id="8cdcffcecaf8573d521f1ab7df33d4cc"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="881" data-natural-height="315" data-lazy-loaded="" data-src="strangecode-moscow/df31064110b42613d4f3fd427699e002.png"></div></div></section><section data-id="4ee5e110ba091ab819e7003565ddafd9"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 540px; left: 0px; top: 80px;" data-block-id="f70adb64a66c6cc7afd319787a622f65"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="2400" data-natural-height="1350" data-lazy-loaded="" data-src="strangecode-moscow/5138eff991cabd14b5c002825beb11bd.jpg"></div></div></section><section data-id="4e3da2971cc76284077faf94e58ee480"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 98px;" data-block-id="14039550b30ef17ddbed8b9c42f435f0"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<h2 style="text-align:left">A brief history</h2>
+
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<pre>ManageIQ Inc.</pre>
+
+	<ul>
+		<li class="fragment" data-fragment-index="1">Founded in 2006 (same year as Twitter)</li>
+		<li class="fragment" data-fragment-index="2">Startup</li>
+		<li class="fragment" data-fragment-index="3">Still actively developed after 13 years</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="4">Enterprise Virtualization Management (EVM)
+	<ul>
+		<li class="fragment" data-fragment-index="5">Launched in 2007</li>
+		<li class="fragment" data-fragment-index="6"><strong>Ruby 1.8.6, Rails 1.2.3</strong></li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="7">Red Hat acquires ManageIQ in 2012</li>
+	<li class="fragment" data-fragment-index="8">Codebase made open-source in 2013</li>
+	<li class="fragment" data-fragment-index="9">David starts working in the UI team in 2014</li>
+</ul>
+</div></div></section><section data-id="5a31fae1beb13bf284a9f91e01c8265c"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="d83b666982c443c9d887afd82f1423ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>UI team?</h1>
+</div></div></section><section data-id="0224bbe480693c1f58d4c75ce28942c2"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="32aae76f031c4af87679aa50c6fa48e7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>UI team???</h1>
+</div></div></section><section data-id="b529222a45f5a80b1aacf2d5f831bdeb"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 482px; left: 0px; top: 110px;" data-block-id="2e6302a48db58b6b970b235e79fa38fd"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="251" data-lazy-loaded="" data-src="strangecode-moscow/6f790aab08fcf3a8c86f349e5c298706.gif"></div></div></section><section data-id="faeb46604d94898bceb49a74ae841df8"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="9b880c3b1cf0b072bcc44847b62b60f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui"><h1>git clone </h1></div></div></section><section data-id="e58ad403f1d8784d7b1a8716952be41b" data-background-color="#000000"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="863dc5a48268b272ebbfa2f6a1db1896"><div class="sl-block-content notranslate" data-highlight-theme="seti" data-code-frame="none" style="z-index: 11; font-size: 105%;"><pre><code style="padding: 20px;">
+
+
+---------------------------------------------------------------------------------------
+Language                             files          blank        comment           code
+---------------------------------------------------------------------------------------
+Ruby                                  3496          72174          27690         506750
+YAML                                  3654           3561           8246         446168
+JavaScript                             321          13025          13500          92051
+XML                                     26           2947              3          55407
+ERB                                    700           1786            578          40833
+XSD                                      5              0             15          25834
+HTML                                   142           2925             14          17655
+CSS                                     72            814            876           7009
+C                                       12           1433           1180           5574
+Haml                                    56            138             54           1633
+Bourne Shell                            13            185            136            897
+Bourne Again Shell                      15            128             54            440
+make                                    16             70             10            261
+Markdown                                 5             65              0            167
+PowerShell                               3             26              5            121
+Tcl/Tk                                   1             32              4             97
+Perl                                     1             12              7             45
+Visual Basic                             1              5              0             39
+JSON                                     3              0              0             36
+Sass                                     1              5              0             13
+DOS Batch                                1              0              0              2
+Windows Module Definition                1              0              0              2
+---------------------------------------------------------------------------------------
+SUM:                                  8545          99331          52372        1201034
+---------------------------------------------------------------------------------------</code></pre></div></div></section><section data-id="9380ce43482097a67b145f9f45364df0"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="db5abf9e2cc452537177730beac856df"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>1 201 034</h1>
+</div></div></section><section data-id="e166878d241cbc0e99696903930eafbf"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 700px; height: 700px; left: 130px; top: 0px;" data-block-id="a7cc0dcf7a842f840b7210bea2c5e2ae"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="strangecode-moscow/209138aef870ebeb640495ec1020f5c3.gif"></div></div></section><section data-id="ee1885f236ed85191eb86eb046a69027"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 205px;" data-block-id="a897fdbab4b8bf84d2cc947dadbb6049"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui" data-fragment-index="0">
+<h1>Один миллион</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 302px;" data-block-id="5bcdba4080c266cf387985ed20ff9a52"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui" data-fragment-index="1">
+<h1>двесте одна тысяча</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 399px;" data-block-id="8edfe4e39fadcc2ee368ec6b5b96bb24"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui" data-fragment-index="2">
+<h1>тридцать четыре</h1>
+</div></div></section><section data-id="3a3dc2ed262b44a43b85045add768c61"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="c90e47b571c1e5d9ab90818a352996fa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Monolith</h1>
+</div></div></section><section data-id="4eb06f02c175d1ea51f8bc0eb205c1e8"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 263px;" data-block-id="3dd26e6f5c3d300649ee8cadde3e1591"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<h1><span style="font-size:1.8em"><span style="color:#FF0000">Megalith</span></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="90ddf0e8dbe8a5da64554999ac1c3e3f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Monolith</h1>
+</div></div></section><section data-id="4817e833f2b3aa9adcb7b69cf508f441"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="e521831985af74d2ff2f3df1307545c9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Before we<br>
+go deeper</h1>
+</div></div></section><section data-id="a53330963fb0c48caaeb15f62a3af0d4"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 98px;" data-block-id="d4130bf70a5ae05b1d0f3786563cd552"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h2 style="text-align:left">Startup</h2>
+
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>You need stuff very quickly</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>Code quality</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>Scalability</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>Hacks</p>
+	</li>
+	<li class="fragment" data-fragment-index="4">
+	<p>Antipatterns</p>
+	</li>
+	<li class="fragment" data-fragment-index="5">
+	<p>Tests</p>
+	</li>
+	<li class="fragment" style="color:rgb(53, 64, 69)" data-fragment-index="6">
+	<p>Technical debt</p>
+	</li>
+	<li class="fragment" data-fragment-index="7">
+	<p>It's all about tradeoffs</p>
+	</li>
+	<li class="fragment" data-fragment-index="8">
+	<p>And it's fine in most of the cases</p>
+	</li>
+</ul>
+</div></div></section><section data-id="a3bc09bb6a69925bfa00eaee1813d45e"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 483px; left: 0px; top: 109px;" data-block-id="53de1baded85bea75f83ae714b2cd212"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1271" data-natural-height="640" data-lazy-loaded="" data-src="strangecode-moscow/31382186f6970b67d79e14b6ff56b2f4.png"></div></div></section><section data-id="94e8ab5ac3498e44a989fb85d82d45f1"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 420px; left: 0px; top: 156px;" data-block-id="3d187b6cf078a5ab0dfab4bd350514f2"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1339" data-natural-height="586" data-lazy-loaded="" data-src="strangecode-moscow/f890248a1e236b592b5d52580a7be541.png"></div></div></section><section data-id="a5d92a235d103f4c5aa1ce956d4ccfb2"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 955px; height: 560px; left: 2px; top: 70px;" data-block-id="1a6ab7f2e4a7ca2de6537b46aa00bc51"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="750" data-natural-height="440" data-lazy-loaded="" data-src="strangecode-moscow/86aff3c810eb9e917df9c538e26095bc.png"></div></div></section><section data-id="9e40d769a433fc387debfd7386440dc1"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 662px; left: 0px; top: 19px;" data-block-id="307e94e7a62eba7bb2e5a6c527ce7b8e"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="786" data-natural-height="542" data-lazy-loaded="" data-src="strangecode-moscow/51d1660ea026927b2d583253985efbd0.png"></div></div></section><section data-id="c56457c8b261adc048a78db38f17ebb5"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 302px;" data-block-id="da741a59a1b123f9fc6f6ee8b7832b7a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Back in those days</h1>
+</div></div></section><section data-id="58bb0fd09bbe5b66d3d2acf230e0c7b3"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 253px;" data-block-id="4df58fab656f4e31cdb9e81664a45f16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>I had no clue<br>
+about these things</h1>
+</div></div></section><section data-id="c244cfe10769cf44d73ee5374b08efa4"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 576px; left: 0px; top: 62px;" data-block-id="fb51331cc6ec0e6e5d5a85a889a5d3f9"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="320" data-natural-height="192" data-lazy-loaded="" data-src="strangecode-moscow/8b6fc9eefffa49c9234255c29055062e.gif"></div></div></section><section data-id="3ff9937fabf128bcb2569d9082e33ce1"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="052d1b36c26bb937febb6d31ec26fed2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>git checkout -b</h1>
+</div></div></section><section data-id="7c0278d66f75961c1adb2519e44af768" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="fccd395d04f65070a32c91ff7fdbf9e5"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11;"><pre class="none"><code style="padding: 15px;" data-line-numbers="1-33|3-5|6-9|10-17|18,26|28-31|33|1-33">&lt;% temparr_sorted_value = Array(CATEGORY_CHOICES.values) %&gt;
+&lt;% temparr_sorted_keys = Array(CATEGORY_CHOICES.keys) %&gt;
+   &lt;% j = 0
+    for i in 0...temparr_sorted_value.length
+   %&gt;
+ &lt;%if j == 0 || j &gt;= 3 %&gt;
+ &lt;% j = 0 %&gt;
+  &lt;tr&gt;
+ &lt;% end %&gt;
+ &lt;%
+    if !@selected.nil?
+      if @selected.include?(temparr_sorted_keys[i])
+        checked = true
+      else
+        checked = false
+      end
+    end %&gt;
+      &lt;td align="left" valign="top" nowrap&gt;
+      &lt;%= hidden_field("item", "type", :value=&gt;"category") %&gt;
+         &lt;%= check_box_tag("check_#{temparr_sorted_keys[i]}",
+                             value="#{temparr_sorted_keys[i]}",
+                             checked=checked,
+                             "data-miq_sparkle_on"=&gt;true, "data-miq_sparkle_off"=&gt;true,
+                             "data-miq_observe_checkbox"=&gt;{:url=&gt;url}.to_json)%&gt;
+      &lt;%= temparr_sorted_value[i] %&gt;
+  &lt;/td&gt;
+
+   &lt;% j += 1 %&gt;
+   &lt;% if j &gt;= 3 %&gt;
+     &lt;/tr&gt;
+   &lt;% end %&gt;
+   &lt;% i +=1 %&gt;
+ &lt;% end %&gt;&lt;%# end of for%&gt;</code></pre></div></div></section><section data-id="57ed1c4c6be4a7728b42908709e7bf3a"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="90bf5644ea27954167e0a9bf968f0f9f"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3>Some problems with our views</h3>
+
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Mixed tabs/spaces</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>Inconsistent indentation</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>Sometimes invalid HTML</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>Complex presentational logic</p>
+	</li>
+	<li class="fragment" data-fragment-index="4">
+	<p>Blocks with do/end</p>
+	</li>
+	<li class="fragment" data-fragment-index="5">
+	<p>Possible dead branches</p>
+	</li>
+	<li class="fragment" data-fragment-index="6">
+	<p>...</p>
+	</li>
+	<li class="fragment" data-fragment-index="7">
+	<p>Hard to read</p>
+	</li>
+</ul>
+</div></div>
+</section><section data-id="0dcab4e14b8c432ccfc2c4b916c378ee"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="ddda9e3451ed02244437b4773ff8e0d0"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3>Some problems with our views</h3>
+
+<ul>
+	<li>
+	<p><s>Mixed tabs/spaces</s> <span style="color:#FF0000">HAML</span></p>
+	</li>
+	<li>
+	<p><s>Inconsistent indentation</s> <span style="color:rgb(255, 0, 0)">HAML</span></p>
+	</li>
+	<li>
+	<p><s>Sometimes invalid HTML</s> <span style="color:#FF0000">HAML</span></p>
+	</li>
+	<li>
+	<p>Complex presentational logic</p>
+	</li>
+	<li>
+	<p><s>Blocks with do/end</s> <span style="color:#FF0000">HAML</span></p>
+	</li>
+	<li>
+	<p>Possible dead branches</p>
+	</li>
+	<li>
+	<p>...</p>
+	</li>
+	<li>
+	<p>Hard to read</p>
+	</li>
+</ul>
+</div></div>
+</section><section data-id="46b7d0b422bcd14a6c955c034fc461e1"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 682px; left: 0px; top: 9px;" data-block-id="719791921165da7a502200e1ce9f22b1"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="593" data-natural-height="421" data-lazy-loaded="" data-src="strangecode-moscow/71e03e59a60ba23decf6aab5cf0380d3.jpg"></div></div></section><section data-id="64f79556cf6ea6a1c184c3753b927135" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="83cd6286e19156d1d410c17e3a97859b"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 10;"><pre class="none"><code style="padding: 15px;" data-line-numbers="">&lt;% temparr_sorted_value = Array(CATEGORY_CHOICES.values) %&gt;
+&lt;% temparr_sorted_keys = Array(CATEGORY_CHOICES.keys) %&gt;
+   &lt;% j = 0
+    for i in 0...temparr_sorted_value.length
+   %&gt;
+ &lt;%if j == 0 || j &gt;= 3 %&gt;
+ &lt;% j = 0 %&gt;
+  &lt;tr&gt;
+ &lt;% end %&gt;
+ &lt;%
+    if !@selected.nil?
+      if @selected.include?(temparr_sorted_keys[i])
+        checked = true
+      else
+        checked = false
+      end
+    end %&gt;
+      &lt;td align="left" valign="top" nowrap&gt;
+      &lt;%= hidden_field("item", "type", :value=&gt;"category") %&gt;
+         &lt;%= check_box_tag("check_#{temparr_sorted_keys[i]}",
+                             value="#{temparr_sorted_keys[i]}",
+                             checked=checked,
+                             "data-miq_sparkle_on"=&gt;true, "data-miq_sparkle_off"=&gt;true,
+                             "data-miq_observe_checkbox"=&gt;{:url=&gt;url}.to_json)%&gt;
+      &lt;%= temparr_sorted_value[i] %&gt;
+  &lt;/td&gt;
+
+   &lt;% j += 1 %&gt;
+   &lt;% if j &gt;= 3 %&gt;
+     &lt;/tr&gt;
+   &lt;% end %&gt;
+   &lt;% i +=1 %&gt;
+ &lt;% end %&gt;&lt;%# end of for%&gt;</code></pre></div></div></section><section data-id="f1e59b714a9d9931d7c15dbfcfe49cdb" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="75dc5949e2d9dc2cbc9a24bbc2cf53d1"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 10;"><pre class="haml"><code style="padding: 15px;" data-line-numbers="|1,3|">- CATEGORY_CHOICES.each_slice(3) do |row|
+  %tr
+    - row.each do |key, value|
+      %td{:align =&gt; 'left', :valign =&gt; 'top', :nowrap =&gt; true}
+        = hidden_field("item", "type", :value =&gt; "category")
+        = check_box_tag("check_#{key}",
+                        :value =&gt; key,
+                        :checked =&gt; @selected.include?(key),
+                        "data-miq_sparkle_on" =&gt; true,
+                        "data-miq_sparkle_off" =&gt; true,
+                        "data-miq_observe_checkbox" =&gt; {:url=&gt;url}.to_json)
+        = value</code></pre></div></div></section><section data-id="2ac539c8636747a52f22ebd7cc0224e9"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="dc2987549c4aeff8f2673aea3136b982"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Systematic<br>
+solutions</h1>
+</div></div></section><section data-id="705f0766bc738a14ca197e5bab6241e5"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 649px; left: 0px; top: 26px;" data-block-id="55b801b1b5e4bafed247901df862318a"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="338" data-lazy-loaded="" data-src="strangecode-moscow/826c16f658b3b0856180bf625761f14a.gif"></div></div></section><section data-id="a9cde8ef39c3c536ba75bc548984f698"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="efa5fc5e1b01649e0793c5014e4edb64"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Doing things<br>
+the<em> Rails Way™</em>
+</h1>
+</div></div></section><section data-id="3c7bf19237ee0306c7953fbfb349aaa9"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 253px;" data-block-id="8f0ec51b6946eeb6af71da9f1f0dea55"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Not doing things<br>
+the<em> Rails 1.2 Way™</em>
+</h1>
+</div></div></section><section data-id="bda659a2addd89d33056beb3cc0f93a2"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="fc6810d256e4b72ed95a50cbabfb3835"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>The goal?</h1>
+</div></div></section><section data-id="5b4082bc86c455bb126771dd6d7cc19d"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 302px;" data-block-id="078a0b8582eb74237468bfe41f496b90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Microservices</h1>
+</div></div></section><section data-id="ca14605617eb5bd8a8485acc1f9e4185"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 205px;" data-block-id="000ede0c25428d61ba5e47fffc70491c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>API-driven<br>
+Single Page<br>
+Application</h1>
+</div></div></section><section data-id="21f73fad731ce66ff26ca0ba231a919b"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="177e2b44861f36573900872f5b4c91bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>1 201 034</h1>
+</div></div></section><section data-id="53e0527f06f6e10b527ecd4290d9e2b2"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 909px; height: 700px; left: 25px; top: 0px;" data-block-id="37d045fb0c914d287981a23f1b8cf791"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="385" data-lazy-loaded="" data-src="strangecode-moscow/0ebba9c61c81c37ed72a04579e915630.gif"></div></div></section><section data-id="d40f98707570c803cc39047a8947f9ac"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="20a560129795dbf6bd98ceb0ebb85b07"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Small steps</h1>
+</div></div></section><section data-id="5da9853836500f5943971760cab721e6"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="6c4a5c0bd1e2760edb28ddc09899e681"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h3>Some architectural problems</h3>
+
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Asset pipeline not utilized</p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="1">
+		<p>Rails static file server</p>
+		</li>
+		<li class="fragment" data-fragment-index="2">
+		<p>No minification</p>
+		</li>
+		<li class="fragment" data-fragment-index="3">
+		<p>No compression</p>
+		</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="4">
+	<p>Mix of JS frameworks</p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="5">
+		<p>Prototype</p>
+		</li>
+		<li class="fragment" data-fragment-index="6">
+		<p>jQuery</p>
+		</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="7" style="color:rgb(53, 64, 69)">
+	<p>3rd party dependencies in our repo</p>
+	</li>
+</ul>
+</div></div></section><section data-id="c5dfc1a5cbea2afc3d8f5e1d3a9a2ad6"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 70px;" data-block-id="26efcb97bc21a6c99aa1b66350532aba"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3>Some architectural problems</h3>
+
+<ul>
+	<li>
+	<p>Asset pipeline <s>not</s> utilized</p>
+
+	<ul>
+		<li>
+		<p><s>Rails static file server</s></p>
+		</li>
+		<li>
+		<p><s>No</s> minification</p>
+		</li>
+		<li>
+		<p><s>No</s> compression</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p><s>Mix of</s> JS frameworks</p>
+
+	<ul>
+		<li>
+		<p><s>Prototype</s></p>
+		</li>
+		<li>
+		<p>jQuery</p>
+		</li>
+	</ul>
+	</li>
+	<li style="color:rgb(53, 64, 69)">
+	<p>3rd party dependencies in our repo</p>
+	</li>
+</ul>
+</div></div></section><section data-id="9c5c180d6dcfc35d27ebbd9d40851fa2"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="50005eb28356fd300280e0b392f8bd85"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>rails-assets.org</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 412px; left: 77px; top: 144px;" data-block-id="24a6200bed2814368abb92274fc6f15e"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="846" data-natural-height="432" data-lazy-loaded="" data-src="strangecode-moscow/63c8757aa4f29dcd85fe9b262016092f.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 405px; height: 319px; left: 75px; top: 191px;" data-block-id="d9e4e182166e760e9ac4a9bc50b07776"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img data-natural-width="405" data-natural-height="319" style="" data-lazy-loaded="" data-src="strangecode-moscow/985b8de2a7b862887172217baf8773b6.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 416px; height: 380px; left: 467px; top: 154px;" data-block-id="53c09c46fd943307f736665381c6200c"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="2"><img style="" data-natural-width="416" data-natural-height="380" data-lazy-loaded="" data-src="strangecode-moscow/d89a4973fce20ea898d5645b52da80f5.png"></div></div></section><section data-id="c101db06e5b1dc3b9b9db9a750532042"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 232px;" data-block-id="c82a41e28168de2d75cb2637ca3a9005"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Bower</h1>
+</div></div></section><section data-id="5ffd6af2b026ed376e5ab93a5484dacb"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 372px;" data-block-id="d2afc431feac002cb0f17169cde343a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>NPM</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 232px;" data-block-id="8c3a11aaefa5a3758fbc1b2d8506715f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<h1>Bower</h1>
+</div></div></section><section data-id="f1260d6222d554c47697c06cd384ff15"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 232px;" data-block-id="950f0d9326f2e15434114c1264a5b592"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Bower</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 372px;" data-block-id="6e417d67ac89d4f2817e49cacea347ed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<h1>YARN</h1>
+</div></div></section><section data-id="d28ba5c731e14373ac7e3f947849ac5d"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 372px;" data-block-id="0479238a28290992f2484985e8f45c9f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>YARN</h1>
+</div></div></section><section data-id="d34e5a42f73cc5a5cb04b1ec86b6df18"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 372px;" data-block-id="2af15ad01060bc08f6eac80447658e54"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>YARN</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 232px;" data-block-id="4aec6e9188f82f10251f4af22f6715f9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<h1>NPM</h1>
+</div></div></section><section data-id="9d14e341c2848fab8ddc6d823384bf9c"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 70px;" data-block-id="6e7b8ff22700ddbafccf162c4333f800"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h3 style="color:rgb(53, 64, 69)">Technical debt</h3>
+
+<ul style="color:rgb(53, 64, 69)">
+	<li class="fragment" data-fragment-index="0">
+	<p>Server-generated JavaScript</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>Antipatterns in our forms</p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="2">Each onChange generates an AJAX request</li>
+		<li class="fragment" data-fragment-index="3">All data being stored in the session</li>
+		<li class="fragment" data-fragment-index="4">Form submit request is actually empty</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="5">
+	<p>Presentation info stored in the session</p>
+	</li>
+	<li class="fragment" data-fragment-index="6">
+	<p>A lot of duplicate code</p>
+	</li>
+	<li class="fragment" data-fragment-index="7">
+	<p>A lot of duplicate code</p>
+	</li>
+	<li class="fragment" data-fragment-index="8">
+	<p>Views tangled into each other</p>
+	</li>
+	<li class="fragment" data-fragment-index="9">
+	<p>A lot of dead code</p>
+	</li>
+</ul>
+</div></div></section><section data-id="42fb1d67109e6d06b495c0eccd1b1b8a"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 70px;" data-block-id="0d51e27a31f3785641d2d4d49cd708a8"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3 style="color:rgb(53, 64, 69)">Technical debt</h3>
+
+<ul style="color:rgb(53, 64, 69)">
+	<li>
+	<p>Server-generated JavaScript</p>
+	</li>
+	<li>
+	<p>Antipatterns in our forms</p>
+
+	<ul>
+		<li>Each onChange generates an AJAX request</li>
+		<li>All data being stored in the session</li>
+		<li>Form submit request is actually empty</li>
+	</ul>
+	</li>
+	<li>
+	<p>Presentation info stored in the session</p>
+	</li>
+	<li>
+	<p>A lot of duplicate code</p>
+	</li>
+	<li>
+	<p><s>A lot of duplicate code</s> <span style="color:#FF0000">Brute Force</span></p>
+	</li>
+	<li>
+	<p><s>Views tangled into each other</s> <span style="color:rgb(255, 0, 0)">Brute Force</span></p>
+	</li>
+	<li>
+	<p><s>A lot of dead code</s> <span style="color:rgb(255, 0, 0)">Brute Force</span></p>
+	</li>
+</ul>
+</div></div></section><section data-id="41fb84b0b3cf03c523c17f63bb842b40"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 70px;" data-block-id="afae5aeab3de3eb69f5c60f472fe653b"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3 style="color:rgb(53, 64, 69)">Technical debt</h3>
+
+<ul style="color:rgb(53, 64, 69)">
+	<li>
+	<p><span style="color:#0000FF">Server-generated JavaScript</span></p>
+	</li>
+	<li>
+	<p>Antipatterns in our forms</p>
+
+	<ul>
+		<li><span style="color:#0000FF">Each onChange generates an AJAX request</span></li>
+		<li><span style="color:#00FF00">All data being stored in the session</span></li>
+		<li>Form submit request is actually empty</li>
+	</ul>
+	</li>
+	<li>
+	<p><span style="color:#00FF00">Presentation info stored in the session</span></p>
+	</li>
+	<li>
+	<p>A lot of duplicate code</p>
+	</li>
+	<li>
+	<p><s>A lot of duplicate code</s> <span style="color:#FF0000">Brute Force</span></p>
+	</li>
+	<li>
+	<p><s>Views tangled into each other</s> <span style="color:rgb(255, 0, 0)">Brute Force</span></p>
+	</li>
+	<li>
+	<p><s>A lot of dead code</s> <span style="color:rgb(255, 0, 0)">Brute Force</span></p>
+	</li>
+</ul>
+</div></div></section><section data-id="6b048c588ccef1b57bb151874edaa9df"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="b67c63cba58e8e3804f67abc77a263d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Just use AngularJS!</h1>
+</div></div></section><section data-id="393df3f068b43794a87b805e6a5f6e42"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="ae6fbb40656e765469cc28da2bc5d512"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Just use EmberJS!</h1>
+</div></div></section><section data-id="bd062e8cce866e9a82d2b4096a7d0ca3"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="d24491f61d235a48253fefd4137dbe93"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Just use<br>
+VueJS!</h1>
+</div></div></section><section data-id="af260a2637e8fed9c31dd7a85b13111d"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="8a4688d90135c456ee9fd5e5bd0be0d1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Just use Angular!</h1>
+</div></div></section><section data-id="87f8fafd9d446471df9a2b0a310c22ad"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="a739cbdd0541baed4c53c6ef5a45649c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Just use<br>
+React!</h1>
+</div></div></section><section data-id="7381bc592cf33b5f3319007d0c56b0a1" data-background-color="#000000"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="79d5327d04d106b24ee3d276666f0eea"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(255, 0, 0);" dir="ui">
+<h1>Welcome to the framework hell!</h1>
+</div></div></section><section data-id="6b6c53eb67f3c14fe4da7f1155bc41c8"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 570px; left: 0px; top: 65px;" data-block-id="8d5bf24b8c708c51c9790a61702da5ca"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="297" data-lazy-loaded="" data-src="strangecode-moscow/02e77c96a5ae18cfbd7304b370508587.gif"></div></div></section><section data-id="d59039149709ed217a407a79a9640318"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 560px; left: 0px; top: 70px;" data-block-id="28ad7993ab8881ddd345d6fac4847213"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1200" data-natural-height="700" style="" data-lazy-loaded="" data-src="strangecode-moscow/b23838ccfd70b01ee0b90d14b9aec4dd.png"></div></div></section><section data-id="e01cfddb8c9b7fc87f1913e4eb1ccd6c"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 591px; left: 0px; top: 109px;" data-block-id="ca0881458e8a8244c2dbd3eda2a4b39a"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1114" data-natural-height="686" data-lazy-loaded="" data-src="strangecode-moscow/92e8b2d469834918979a4608edabe1a3.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 308px; height: 218px; left: 406px; top: 0px;" data-block-id="b53bba8b5c34ecb6551683a479e53b5e"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="308" data-natural-height="218" style="" data-lazy-loaded="" data-src="strangecode-moscow/c91acbe6f53e29d679244ccae5da6b86.png"></div></div></section><section data-background-color="#000000" data-id="d718130da888e3b68ae4eee9facb150a"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="23ac359aa2d604c02eb629d3ae647bef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(255, 0, 0);" dir="ui">
+<h1>Stuck in the framework hell!</h1>
+</div></div></section><section data-id="7eafcbd581a72182a91212d278d831a3"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 70px;" data-block-id="9c1f6ab022f0ad22fc7f8c018bba9f17"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3 style="color:rgb(53, 64, 69)">Technical debt</h3>
+
+<ul style="color:rgb(53, 64, 69)">
+	<li>
+	<p><span style="color:#0000FF">Server-generated JavaScript</span></p>
+	</li>
+	<li>
+	<p>Antipatterns in our forms</p>
+
+	<ul>
+		<li><span style="color:#0000FF">Each onChange generates an AJAX request</span></li>
+		<li><span style="color:#00FF00">All data being stored in the session</span></li>
+		<li>Form submit request is actually empty</li>
+	</ul>
+	</li>
+	<li>
+	<p><span style="color:#00FF00">Presentation info stored in the session</span></p>
+	</li>
+	<li>
+	<p>A lot of duplicate code</p>
+	</li>
+	<li>
+	<p><s>A lot of duplicate code</s> <span style="color:#FF0000">Brute Force</span></p>
+	</li>
+	<li>
+	<p><s>Views tangled into each other</s> <span style="color:rgb(255, 0, 0)">Brute Force</span></p>
+	</li>
+	<li>
+	<p><s>A lot of dead code</s> <span style="color:rgb(255, 0, 0)">Brute Force</span></p>
+	</li>
+</ul>
+</div></div></section><section data-id="7640fac3e4ff27d21abd96b44b44374a"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 265px;" data-block-id="366c7d9a6bc444050cc0f6776b42771e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ol>
+	<li class="visible">
+	<h2>Components</h2>
+	</li>
+	<li class="visible">
+	<h2>Global shared state</h2>
+	</li>
+</ol>
+</div></div></section><section data-id="f972577d89ae0fb2eee2e41510875d77"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="dd1b5286e9d1333bcf6d8c9d7aaf09a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>React* + Redux</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 611px;" data-block-id="2822cf899230a51c3221a58eb8f102e8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>* I'm still skeptical about it</p>
+</div></div></section><section data-id="ab8dbb9fb92d6e2fbad10331ebecdbdd"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="19863a00463066505702babbf7433a2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>~70% of our app are forms</h1>
+</div></div></section><section data-id="a0533602ce11a9943f139c9f81144385"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 500px; height: 430px; left: 0px; top: 0px;" data-block-id="615e8e42c8302eb104778be195040ae9"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11;" data-fragment-index="0"><pre class="json"><code data-line-numbers="">{
+  "fields": [
+    {
+      "component": "sub-form",
+      "name": "sub-form-1",
+      "title": "Basic info",
+      "fields": [
+        {
+          "name": "username",
+          "label": "Username",
+          "component": "text-field"
+        },
+        {
+          "name": "password",
+          "label": "Password",
+          "component": "text-field",
+          "type": "password"
+        }
+      ]
+    }
+  ]
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 789px; height: 236px; left: 171px; top: 449px;" data-block-id="6de17cb7e070e094b3a8bf29e0a05427"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="3"><img data-natural-width="789" data-natural-height="236" style="" data-lazy-loaded="" data-src="strangecode-moscow/4b7b346d0fb3563e2b211514569cb526.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 665px; height: 200px; left: 250px; top: 449px;" data-block-id="ad521ac2c41f80964a551bdf54901f28"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="2"><img style="" data-natural-width="665" data-natural-height="200" data-lazy-loaded="" data-src="strangecode-moscow/1e289d2958f0bbc2cabc72ac34d89857.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="7eac6736b3b7fe3f60d071d7f5e408b4"><div class="sl-block-content fragment fade-out" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" dir="ui" data-fragment-index="0">
+<h1>JSON schema</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 398px; height: 132px; left: 537px; top: 103px;" data-block-id="e8147a58d8a3832da43999f7e7928e02"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="1"><img style="" data-natural-width="398" data-natural-height="132" data-lazy-loaded="" data-src="strangecode-moscow/434ecf2b4fc761c6e8a5eb8af6e17c47.png"></div></div></section><section data-id="a9b1d4a5719545e4eb6072dbeecb0fef"><div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 302px;" data-block-id="2cdf02d2f22276cedc2ef4ef1084e492"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>data-driven-forms.org</h1>
+</div></div></section><section data-id="03265c5a23d500be237262f5505d7d58"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 652px; left: 0px; top: 24px;" data-block-id="dfbbb4eb16f281f0a33b75fb11c99b32"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1989" data-natural-height="1350" data-lazy-loaded="" data-src="strangecode-moscow/a442f1c84d2319c107465cc76adb8733.jpg"></div></div></section><section data-id="f704cca0f33cc47fad2927897dd0179b"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 477px; height: 516px; left: 0px; top: 0px;" data-block-id="950d419ccaeba650213411c265fbf472"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img data-natural-width="477" data-natural-height="516" style="" data-lazy-loaded="" data-src="strangecode-moscow/61dcea92531a02238456329ee0e8a0ec.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 535px; height: 256px; left: 425px; top: 0px;" data-block-id="6124931ef1e3f010d6740f2bbb7cd34b"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img data-natural-width="535" data-natural-height="256" style="" data-lazy-loaded="" data-src="strangecode-moscow/033bca966ab104d5ebd39f624640dc65.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 399px; left: 154px; top: 301px;" data-block-id="77d00997c867981e0d7e477bbc973f72"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="2"><img style="" data-natural-width="935" data-natural-height="463" data-lazy-loaded="" data-src="strangecode-moscow/6a2f8b1f2ad65c4e72364631e389e530.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 310px; height: 256px; left: 292px; top: 222px;" data-block-id="d63f60d8d5660e43290b15fe6fa15c18"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="3"><img style="" data-natural-width="310" data-natural-height="256" data-lazy-loaded="" data-src="strangecode-moscow/3c504c5c498f796b094f200692285275.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="cf7098b0913adce93a095b5b77e249db"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Icons</h1>
+</div></div></section><section data-id="f7d3f055b1c752fb4b89357d5d162ffb" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="f39162e0305964dc162e7c2f42c3586b"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 10;"><pre><code style="padding: 5px;" data-line-numbers="|2-4|5|5,6,8,17,20,22,25,30|9-16|26-29|31-34|">  def listicon_image(view, row)
+    klass = view.db.constantize
+    item  = @targets_hash[@id] if @targets_hash
+    item  = klass.find(@id) unless @targets_hash
+    case item.class.base_class.to_s
+    when "ExtManagementSystem"
+      return "/images/icons/new/vendor-#{item.emstype.downcase}.png"
+    when "MiqRequest"
+      case item.request_status.to_s.downcase
+      when "ok"
+        return "/images/icons/new/checkmark.png"
+      when "error"
+        return "/images/icons/new/x.png"
+      else
+        return "/images/icons/new/#{@listicon.downcase}.png"
+      end
+    when "ResourcePool"
+      img = item.vapp ? "vapp" : "resource_pool"
+      return "/images/icons/new/#{img}.png"
+    when "Vm", "VmOrTemplate"
+      return "/images/icons/new/vendor-#{item.vendor.downcase}.png"
+    when "VdiController", "VdiDesktopPool"
+      vendor = item.vendor ? item.vendor.downcase : "unknown"
+      return "/images/icons/new/vendor-#{vendor}.png"
+    when "Service", "ServiceTemplate"
+      if item.respond_to?(:picture) &amp;&amp; item.picture
+        add_pictures_to_sync(item.picture.id)
+        return "../../../pictures/#{item.picture.basename}"
+      end
+    end
+    if @listicon != nil
+      return "/images/icons/new/#{@listicon.downcase}.png"
+    else
+      return "/images/icons/new/#{view.db.underscore}.png"
+    end
+  end</code></pre></div></div></section><section data-id="a3ffa5dae4646d516c406710f7fa7d70"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 302px;" data-block-id="85a29d19c6e5a690b153a815543eb70c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Record ➡️ Image</h1>
+</div></div></section><section data-id="58a599b6d12fd7e076926141cb883c7d"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 302px;" data-block-id="32f225c79040e679612ebef7c12b017f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Image ⬅️ Record</h1>
+</div></div></section><section data-id="8f3092f0a71bf7c67afde2be58832785"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 302px;" data-block-id="0a7e2e38e5878895f55c3eb60fe341e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Image <em>declared</em> <em>in</em> Record</h1>
+</div></div></section><section data-id="8776aaf56fc8be2e9a976c75ee5317d9"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 618px; left: 0px; top: 41px;" data-block-id="62892a3156be58d03a0486451fcfd3d0"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="500" data-natural-height="322" data-lazy-loaded="" data-src="strangecode-moscow/e99c4908cec7758f5903a0229dd88d6f.gif"></div></div></section><section data-id="38abf2fb472e7a55dd67c6f4c5d9f8b9"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 253px;" data-block-id="41f592e02032e770f7f218298edceabd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>No presentation<br>
+logic in models</h1>
+</div></div></section><section data-id="16c987ab98100a1b92472f07bd58d21f"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 253px;" data-block-id="4d5a89452a14628d2a9449a3a711f087"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Wrap models with presentation logic</h1>
+</div></div></section><section data-id="405c872fe3d6af82eeb4eee47bfac537"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 253px;" data-block-id="3bc52a5f011c5cf8b7ce8c3cdbfb86cc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>
+<em>Decorate</em> models with presentation logic</h1>
+</div></div></section><section data-id="8a7083f97dc9e7bd9bec6af3d50f07f3" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="b4dcb32ea4a0fd182badbcc90beb8072"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11;"><pre><code style="padding: 10px;" data-line-numbers="|4-13|17-22|25-29|31-32"># lib/miq_decorator.rb
+class MiqDecorator &lt; SimpleDelegator
+  class &lt;&lt; self
+    def for(klass)
+      decorator = nil
+
+      while decorator.nil? &amp;&amp; klass != ApplicationRecord &amp;&amp; !klass.nil?
+        decorator = "#{klass.name}Decorator".safe_constantize
+        klass = klass.superclass
+      end
+
+      decorator
+    end
+  end
+end
+
+# app/models/application_record.rb
+class ApplicationRecord &lt; ActiveRecord::Base
+  def decorate
+    @_decorator ||= MiqDecorator.for(self.class).new(self)
+  end
+end
+
+# app/decorators/ext_management_system_decorator.rb
+class ExtManagementSystemDecorator &lt; MiqDecorator
+  def fileicon
+    "/images/icons/new/vendor-#{emstype.downcase}.png"
+  end
+end
+
+# somewhere in your views
+@record.decorate.fileicon</code></pre></div></div></section><section data-id="f012f183abb7df9f3434e75de1de97cf" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="c7717ae883fc07844dbae07c378ed73a"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 10;"><pre><code style="padding: 10px;" data-line-numbers="26-28|"># lib/miq_decorator.rb
+class MiqDecorator &lt; SimpleDelegator
+  class &lt;&lt; self
+    def for(klass)
+      decorator = nil
+
+      while decorator.nil? &amp;&amp; klass != ApplicationRecord &amp;&amp; !klass.nil?
+        decorator = "#{klass.name}Decorator".safe_constantize
+        klass = klass.superclass
+      end
+
+      decorator
+    end
+  end
+end
+
+# app/models/application_record.rb
+class ApplicationRecord &lt; ActiveRecord::Base
+  def decorate
+    @_decorator ||= MiqDecorator.for(self.class).new(self)
+  end
+end
+
+# app/decorators/ext_management_system_decorator.rb
+class ExtManagementSystemDecorator &lt; MiqDecorator
+  def fonticon
+    'fa fa-computer'
+  end
+
+  def fileicon
+    "/images/icons/new/vendor-#{emstype.downcase}.png"
+  end
+end
+</code></pre></div></div></section><section data-id="f66fe46f8b29e85d254593cb9a0f5749"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="b00647b03511e7e4f4e52b2fb416fd1c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Quadicons</h1>
+</div></div></section><section data-id="e5964424c2eb68bbe076755660782662"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 648px; left: 0px; top: 25px;" data-block-id="71f0bb5e3d0a94d357e3385084ef3499"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="767" data-natural-height="518" style="" data-lazy-loaded="" data-src="strangecode-moscow/417abbc52f7ef43b442f180639ad998b.png"></div></div></section><section data-id="7ef3e34cffeba004bce92e9dadec4aba"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="6263e9e42328370e2c0bb93e820df27a"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 80%;"><pre class="none"><code data-line-numbers="|16-22|29,31-33,35,38|40-41|">&lt;% size ||= 72      %&gt;&lt;%# Default to 100 pixel size %&gt;
+&lt;% item ||= nil     %&gt;&lt;%# item is the record to be used to build the quadicon %&gt;
+&lt;% typ  ||= nil     %&gt;&lt;%# Qualifier (ie :listnav) %&gt;
+&lt;% db = "VmVdi" if item.class.base_model.to_s == "Vm" &amp;&amp; item.vdi? &amp;&amp; !@explorer %&gt;
+&lt;% if !db &amp;&amp; item %&gt;
+  &lt;% db = item.kind_of?(ExtManagementSystem) ? model_for_ems(item).name : item.class.base_model.name %&gt;
+&lt;% end %&gt;
+&lt;% if mode == :text %&gt;&lt;%# Rendering the text link, not the quadicon %&gt;
+  &lt;% trunc_at = 13 %&gt;
+  &lt;% trunc_to = 10 %&gt;
+  &lt;%= render :partial =&gt; "layouts/quadicon/quadicon_text",
+             :locals=&gt;{:db=&gt;db, :trunc_at=&gt;trunc_at, :trunc_to=&gt;trunc_to, :row=&gt;row} %&gt;
+&lt;% else %&gt;&lt;%# Render the quad icon %&gt;
+  &lt;% if typ == :listnav %&gt;&lt;%# Generating a quadicon in the listnav %&gt;
+    &lt;% height ||= 80 %&gt;
+    &lt;div style="
+      position: relative;
+      width: 180px;
+      height: &lt;%= height %&gt;px;
+      left: 32px;
+      z-index:0;
+    "&gt;
+  &lt;% else %&gt;&lt;%# Not in listnav %&gt;
+    &lt;div id="quadicon"&gt;
+  &lt;% end %&gt;
+
+  &lt;% if ["EmsCluster","ResourcePool","Repository","Service","ServiceTemplate","Storage","VdiController",
+         "VdiDesktopPool","VdiEndpointDevice","VdiFarm","VdiUser"].include?(item.class.name) %&gt;
+    &lt;% partial_name = item.class.name.underscore %&gt;
+  &lt;% elsif item.kind_of?(VmOrTemplate) %&gt;
+    &lt;% partial_name = item.class.base_model.to_s == "Vm" &amp;&amp; item.vdi? &amp;&amp; !@explorer ?
+                      "vm_vdi" :
+                      item.class.base_model.to_s.underscore %&gt;
+  &lt;% elsif ["ExtManagementSystem", "Host"].include?(item.class.base_class.name) %&gt;
+    &lt;% partial_name = item.class.base_class.name.underscore %&gt;
+  &lt;% else %&gt;
+    &lt;%# ############# All other models that only need single large icon and use name for hover text ########### %&gt;
+    &lt;% partial_name = "single_quad" %&gt;
+  &lt;% end %&gt;
+  &lt;%= render :partial =&gt; "layouts/quadicon/#{partial_name}",
+             :locals=&gt;{:size=&gt;size,:item=&gt;item, :typ=&gt;typ, :db=&gt;db} %&gt;
+  &lt;/div&gt; &lt;%# quadicon div end %&gt;
+
+&lt;% end %&gt;
+</code></pre></div></div></section><section data-id="33ef74753a2afb6c97225a2ead8cc89f" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="a97eca69426ae0942c0088274bdfc348"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 10; font-size: 80%;"><pre class="none"><code data-line-numbers="|16-22|29,31-33,35,38|40-41|">&lt;% width = size == 150 ? 54 : 35 %&gt;
+&lt;% height = width %&gt;
+&lt;% if @settings[:quadicons][:storage] %&gt;
+  &lt;div class="flobj"&gt;
+    &lt;img src="/images/icons/&lt;%= size %&gt;/base.png" width="&lt;%= size %&gt;" height="&lt;%= size %&gt;"/&gt;
+  &lt;/div&gt;
+  &lt;div class="flobj a&lt;%= size %&gt;"&gt;
+    &lt;img src="/images/icons/new/storagetype-&lt;%= h(item.store_type.downcase)%&gt;.png"/&gt;
+  &lt;/div&gt;
+  &lt;% hcount = item.v_total_hosts  %&gt;&lt;%# Get the Host count %&gt;
+  &lt;% vcount = item.v_total_vms  %&gt;&lt;%# Get the VM count %&gt;
+    &lt;div class="flobj b&lt;%= size %&gt;"&gt;&lt;p&gt;&lt;%= vcount %&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="flobj c&lt;%= size %&gt;"&gt;&lt;p&gt;&lt;%= hcount %&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;% space_percent = item.free_space_percent_of_total == 100 ?
+                       20 :
+                       ((item.free_space_percent_of_total.to_i + 2)/5.25).round %&gt;
+    &lt;div class="flobj d&lt;%= size %&gt;"&gt;
+      &lt;img src="/images/icons/new/piecharts/datastore/&lt;%= h(space_percent)%&gt;.png"/&gt;
+    &lt;/div&gt;
+&lt;% else %&gt;
+  &lt;% space_percent = (item.used_space_percent_of_total.to_i + 9) / 10 %&gt;
+  &lt;div class="flobj" &gt;
+    &lt;img src="/images/icons/&lt;%= size %&gt;/base-single.png" width="&lt;%= size %&gt;" height="&lt;%= size %&gt;"/&gt;
+  &lt;/div&gt;
+  &lt;div class="flobj e&lt;%= size %&gt;"&gt;
+    &lt;img src="/images/icons/new/datastore-&lt;%= h(space_percent)%&gt;.png"/&gt;
+  &lt;/div&gt;
+&lt;% end %&gt;
+&lt;% if typ == :listnav %&gt;&lt;%# Listnav, no clear image needed %&gt;
+  &lt;div class="flobj" &gt;
+    &lt;img src="/images/icons/&lt;%= size %&gt;/reflection.png" width="&lt;%= size %&gt;" height="&lt;%= size %&gt;"/&gt;
+  &lt;/div&gt;
+&lt;% else %&gt;
+  &lt;div class="flobj"&gt;
+    &lt;% if ! @embedded || @showlinks %&gt;
+      &lt;a href="&lt;%= url_for_record(item) %&gt;" title="&lt;%= "Name: "+h(item.name) %&gt;"&gt;
+        &lt;img src="/images/icons/&lt;%= size %&gt;/reflection.png" width="&lt;%= size %&gt;" height="&lt;%= size %&gt;"/&gt;
+      &lt;/a&gt;
+    &lt;% else %&gt;
+      &lt;a title="&lt;%= "Name: "+h(item.name)+" | " + ui_lookup(:table=&gt;"storages") + " Type: "+h(item.store_type) %&gt;"&gt;
+        &lt;img src="/images/icons/&lt;%= size %&gt;/reflection.png" width="&lt;%= size %&gt;" height="&lt;%= size %&gt;"/&gt;
+      &lt;/a&gt;
+    &lt;% end %&gt;
+  &lt;/div&gt;
+&lt;% end %&gt;</code></pre></div></div></section><section data-id="d7ba1496aedeb22c0a2c3327e3d9b105"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="8e58d3db4ee5d1308299ce101663edec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Decorators</h1>
+</div></div></section><section data-id="586c817889f21ffcaf7c16412c9ee335" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="1d29b501a075ee29095206bdafb620d7"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11;"><pre class="ruby"><code data-line-numbers="|6-24|26-30|">class StorageDecorator &lt; MiqDecorator
+  def self.fonticon
+    'fa fa-database'
+  end
+
+  def quadicon
+    {
+      :top_left     =&gt; {
+        :tooltip =&gt; store_type.to_s
+      }.merge(store_type_icon),
+      :top_right    =&gt; {
+        :text    =&gt; t = v_total_vms,
+        :tooltip =&gt; "%{number} Virtual Machines" % {:number =&gt; t}
+      },
+      :bottom_left  =&gt; {
+        :text    =&gt; t = v_total_hosts,
+        :tooltip =&gt; "%{number} Hosts" % {:number =&gt; t}
+      },
+      :bottom_right =&gt; {
+        :piechart =&gt; percent,
+        :tooltip  =&gt; ("%{number}% Free Space") % {:number =&gt; v_free_space_percent_of_total}
+      }
+    }
+  end
+  
+  def single_quad
+    {
+      :piechart =&gt; percent
+    }
+  end
+end</code></pre></div></div></section><section data-id="cd54bbab4fcbb4e07b370c4712059921"><div class="sl-block" data-block-type="text" style="height: auto; width: 749px; left: 106px; top: 302px;" data-block-id="0b4294aac48e9e20b4a4ec95574e401e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>JSON + Component</h1>
+</div></div></section><section data-id="1a3209a9759a7d583fe6c5b9e76f526b"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 446px; height: 510px; left: 0px; top: 95px;" data-block-id="a107f21b7f579c2023300a9da022892f"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="446" data-natural-height="510" data-lazy-loaded="" data-src="strangecode-moscow/7316f7da133d358a46badc21f52a8ff5.png"></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 506px; height: 700px; left: 454px; top: 0px;" data-block-id="414098cfb0a1359e1b19cd1d47c32456"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 12; font-size: 80%;" data-fragment-index="0"><pre class="ruby"><code data-line-numbers="">class DefaultMenu
+  # ...
+  def control_menu_section
+    Menu::Section.new(:con, N_("Control"), 'fa fa-shield',
+      [
+        Menu::Item.new(
+          'miq_policy',
+          N_('Explorer'),
+          'control_explorer',
+          {:feature =&gt; 'control_explorer_view'},
+          '/miq_policy/explorer'
+        ),
+        Menu::Item.new(
+          'miq_policy_rsop',
+          N_('Simulation'),
+          'policy_simulation',
+          {:feature =&gt; 'policy_simulation'},
+          '/miq_policy/rsop'
+        ),
+        Menu::Item.new(
+          'miq_policy_export',
+          N_('Import / Export'),
+          'policy_import_export',
+          {:feature =&gt; 'policy_import_export'},
+          '/miq_policy/export'
+        ),
+        Menu::Item.new(
+          'miq_policy_logs',
+          N_('Log'),
+          'policy_log',
+          {:feature =&gt; 'policy_log'},
+          "/miq_policy/log"
+        )
+      ]
+    )
+  end
+
+  # ...
+  def default_menu
+    [overview_menu_section, services_menu_section,
+     compute_menu_section, configuration_menu_section,
+     network_menu_section, storage_menu_section,
+     control_menu_section, automation_menu_section]
+  end
+end
+</code></pre></div></div></section><section data-id="3f14660221cbff28691ac5675db0a321"><div class="sl-block" data-block-type="text" style="height: auto; width: 749px; left: 106px; top: 302px;" data-block-id="2ea1f7588900a42d2a316fc81a3947ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Trees</h1>
+</div></div></section><section data-id="2aac3a8096bb0b6eb161b4fdd4ab006d"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 621px; left: 0px; top: 40px;" data-block-id="7e34616b434eca17a02a244b1680a35f"><div class="sl-block-content fragment fade-out" style="z-index: 11;" data-fragment-index="0"><img style="" data-natural-width="1498" data-natural-height="969" data-lazy-loaded="" data-src="strangecode-moscow/3f33f5f66750b44ac33eee3bf925ad01.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 424px; height: 445px; left: 348px; top: 128px;" data-block-id="26a6b8fdfb776012f699eeb8c76b75ca"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="424" data-natural-height="445" data-lazy-loaded="" data-src="strangecode-moscow/4ead776fc59c9a26bd5af21ebaafe945.png"></div></div></section><section data-id="3a1083ee5efbd10a3731b0554690325d"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 371px; height: 518px; left: 0px; top: 91px;" data-block-id="a8438d2767110a532392c2e3d73fd1d0"><div class="sl-block-content" style="z-index: 10;"><img data-natural-width="423" data-natural-height="591" style="" data-lazy-loaded="" data-src="strangecode-moscow/557701716331d98dd659ce02ae5bc55d.png"></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 560px; height: 700px; left: 400px; top: 0px;" data-block-id="297a4eba1da4412c3edbf067c2a97a45"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 12; font-size: 75%;" data-fragment-index="0"><pre class="ruby"><code data-line-numbers="">class MiqPolicyController &lt; ApplicationController
+  #...
+  def features
+    [
+      {
+        :name     =&gt; :policy_profile,
+        :title    =&gt; _("Policy Profiles"),
+        :role     =&gt; "policy_profile",
+        :role_any =&gt; true
+      },
+      {
+        :name     =&gt; :policy,
+        :title    =&gt; _("Policies"),
+        :role     =&gt; "policy",
+        :role_any =&gt; true
+      },
+      {
+        :name     =&gt; :event,
+        :title    =&gt; _("Events"),
+        :role     =&gt; "event",
+        :role_any =&gt; true
+      },
+      {
+        :name     =&gt; :condition,
+        :title    =&gt; _("Conditions"),
+        :role     =&gt; "condition",
+        :role_any =&gt; true
+      },
+      {
+        :name     =&gt; :action,
+        :title    =&gt; _("Actions"),
+        :role     =&gt; "action",
+        :role_any =&gt; true
+      },
+      {
+        :name     =&gt; :alert_profile,
+        :title    =&gt; _("Alert Profiles"),
+        :role     =&gt; "alert_profile",
+        :role_any =&gt; true
+      },
+      {
+        :name     =&gt; :alert,
+        :title    =&gt; _("Alerts"),
+        :role     =&gt; "alert",
+        :role_any =&gt; true
+      },
+    ].map { |hsh| ApplicationController::Feature.new_with_hash(hsh) }
+  end</code></pre></div></div></section><section data-id="e31baa0525196316c8c1f7ac0e1c0eef"><div class="sl-block" data-block-type="text" style="height: auto; width: 749px; left: 106px; top: 70px;" data-block-id="468ee7dbf80119b355e4fbe36e0d5a7c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3 style="text-align:left">"Backend" for Trees</h3>
+
+<ul>
+	<li class="fragment" data-fragment-index="0">Recursively building the structure
+	<ul>
+		<li class="fragment" data-fragment-index="1">From root</li>
+		<li class="fragment" data-fragment-index="2">From any node - lazy loading</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="3">Nodes added from
+	<ul>
+		<li class="fragment" data-fragment-index="4">Views</li>
+		<li class="fragment" data-fragment-index="5">Controllers</li>
+		<li class="fragment" data-fragment-index="6">Presenters (TreeBuilder)</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="7">Nodes created from
+	<ul>
+		<li class="fragment" data-fragment-index="8">DB records</li>
+		<li class="fragment" data-fragment-index="9">Static hashes</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="10">Objects -&gt; Hashes -&gt; Hash -&gt; JSON</li>
+</ul>
+</div></div></section><section data-id="e31bdafc836c126ef648ff63ff2fc472"><div class="sl-block" data-block-type="text" style="height: auto; width: 749px; left: 106px; top: 70px;" data-block-id="aeda64d4212ba2925bcbdd5c806427ba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3 style="text-align:left">"Backend" for Trees</h3>
+
+<ul>
+	<li>Recursively building the structure
+	<ul>
+		<li>From root</li>
+		<li>From any node - lazy loading</li>
+	</ul>
+	</li>
+	<li>Nodes added from
+	<ul>
+		<li><s>Views</s></li>
+		<li><s>Controllers</s></li>
+		<li>Presenters (TreeBuilder)</li>
+	</ul>
+	</li>
+	<li>Nodes created from
+	<ul>
+		<li>DB records</li>
+		<li>Static hashes</li>
+	</ul>
+	</li>
+	<li>Objects -&gt; <s>Hashes -&gt;</s> Hash -&gt; JSON</li>
+</ul>
+</div></div></section><section data-id="49933c109fd60dbc9cabc6962c6d143c" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="ea5ded82ebad2b54078212130be8ef1c"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 85%;"><pre class="ruby"><code data-line-numbers="">def build
+  case object
+  when ChargebackRate       then generic_node(object.description, "chargeback_rates.png")
+  when Condition            then generic_node(object.description, "miq_condition.png")
+  when CustomButtonSet      then custom_button_set_node
+  when Dialog               then generic_node(object.label, "dialog.png")
+  when DialogTab            then generic_node(object.label, "dialog_tab.png")
+  when DialogGroup          then generic_node(object.label, "dialog_group.png")
+  when DialogField          then generic_node(object.label, "dialog_field.png")
+  when EmsFolder            then ems_folder_node
+  when MiqAeClass           then node_with_display_name("ae_class.png")
+  when MiqAeInstance        then node_with_display_name("ae_instance.png")
+  when MiqAeMethod          then node_with_display_name("ae_method.png")
+  when MiqAeNamespace       then node_with_display_name("ae_namespace.png")
+  when MiqAlertSet          then generic_node(object.description, "miq_alert_profile.png")
+  when MiqReport            then generic_node(object.name, "report.png")
+  when MiqSchedule          then generic_node(object.name, "miq_schedule.png")
+  when MiqServer            then miq_server_node
+  when MiqTemplate          then generic_node(object.name, "#{object.normalized_state.downcase}.png")
+  when MiqAlert             then generic_node(object.description, "miq_alert.png")
+  when MiqAction            then miq_action_node
+  when MiqEvent             then generic_node(object.description, "event-#{object.name}.png")
+  when MiqGroup             then generic_node(object.name, "group.png")
+  when MiqPolicy            then miq_policy_node
+  when MiqUserRole          then generic_node(object.name, "miq_user_role.png")
+  when WindowsImage         then generic_node(object.name, "os-windows_generic.png")
+  when PxeImageType         then generic_node(object.name, "pxeimagetype.png")
+  when PxeServer            then generic_node(object.name, "pxeserver.png")
+  when ScanItemSet          then generic_node(object.name, "scan_item_set.png")
+  when Storage              then generic_node(object.name, "storage.png")
+  when User                 then generic_node(object.name, "user.png")
+  when MiqSearch            then generic_node(object.description, "filter.png")
+  when MiqDialog            then generic_node(object.description, "miqdialog.png", object[0])
+  when MiqRegion            then miq_region_node
+  when MiqWidgetSet         then generic_node(object.name, "dashboard.png", object.name)
+  when VmdbTableEvm         then generic_node(object.name, "vmdbtableevm.png")
+  when VmdbIndex            then generic_node(object.name, "vmdbindex.png")
+  when Zone                 then zone_node
+  when Hash                 then hash_node
+  end
+  @node
+end</code></pre></div></div></section><section data-id="24653ae637f1c4712f4ac1080978ba1a" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="ad7f58720047294872d80f9b8f9abca8"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11;"><pre class="ruby"><code data-line-numbers="|14-20|35|25-32|"># app/presenters/tree_node.rb
+module TreeNode
+  class &lt;&lt; self
+    def new(object, parent_id = nil, tree = nil)
+      subclass(object).new(object, parent_id, tree)
+    end
+
+    def exists?(object)
+      !subclass(object).nil?
+    end
+
+    private
+
+    def subclass(object)
+      klass = "#{self}::#{object.class}".safe_constantize
+      if object.kind_of?(ApplicationRecord)
+      	klass ||= "#{self}::#{object.class.base_class}".safe_constantize
+      end      
+      klass
+    end
+  end
+end
+
+# app/presenters/tree_node/classification.rb
+module TreeNode
+  class Classification &lt; Node
+    set_attribute(:text, &amp;:description)
+    set_attribute(:selectable, false)
+    set_attribute(:hide_checkbox, true)
+    set_attribute(:tooltip) { "Category: #{@object.description}" }
+  end
+end
+
+# Usage
+TreeNode.new(Classification.find(123))
+</code></pre></div></div></section><section data-id="8a1a72e44f382a1b6eaf31b806ed836a"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="e6a689d13257a031c52974624e79200a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>It works*</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 611px;" data-block-id="c9fbdb061d62c006e740802430c7f8cb"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>* it was a bad idea</p>
+</div></div></section><section data-id="a3cc1ba1b8d72514367e3ca2ce9b973f"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="c3e26809ebe22539f855a9b949e387d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>There's a pattern here</h1>
+</div></div></section><section data-id="644a4e36619737465eec7e268c804796"><div class="sl-block" data-block-type="text" style="height: auto; width: 749px; left: 106px; top: 70px;" data-block-id="8460006ab4b0768634cb4949c5acad1f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h3 style="text-align:left">Declarative solution</h3>
+
+<ul>
+	<li>JSON + Component</li>
+	<li>Decorators
+	<ul>
+		<li>Icons</li>
+		<li>Quadicons</li>
+		<li>Tree Nodes*</li>
+	</ul>
+	</li>
+	<li>Struct-like objects
+	<ul>
+		<li>Toolbars*</li>
+		<li>Menus</li>
+		<li>TreeBuilders</li>
+	</ul>
+	</li>
+	<li>JSON files
+	<ul>
+		<li>Forms</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 278px; left: 619px; top: 611px;" data-block-id="b78cd3894a37a0d8f69ec96bed70b972"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>* with DSL</p>
+</div></div></section><section data-id="5abe348457c68636f26bcec6b2723b12"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 313px;" data-block-id="f91593c1b5a9a67cef57b7cb2053ff4b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2><span style="font-size:1.0em">if/else 🍝 ➡️ HTML + JS</span></h2>
+</div></div></section><section data-id="14d496b963c8e2842d91db17f072166d"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 228px;" data-block-id="1b62cc7a0e1af632d4b67a18258b3c25"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h2><span style="font-size:1.0em">Decorator ➡️ JSON</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 314px;" data-block-id="b9d63d9d3713f334dd3eb74d316fdb66"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
+<h2>
+<strong>Struct </strong><strong>➡️ JSON</strong>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 399px;" data-block-id="f4cfdc40b67e0f6bcdc581e4817b2e39"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="1">
+<h2>➡️ JSON</h2>
+</div></div></section><section data-id="751de50b52c2c35d8f7913988de06dc3"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 302px;" data-block-id="e1a1ae847588c65c02e87589f789d113"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1><span style="font-size:1.0em">DSL*</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 611px;" data-block-id="7d709a5e6958c9344b450d1362e45707"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>* or we just rewrite it to JavaScript</p>
+</div></div></section><section data-id="423e40e34ee53bebffb302fc5743ccc8"><div class="sl-block" data-block-type="text" style="height: auto; width: 718px; left: 121px; top: 253px;" data-block-id="ee2e715671366dd22076a831424ac0cb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>And when there's no pattern?</h1>
+</div></div></section><section data-id="60f2141080d9db0e81a09e37d0dce37d" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="409a6a1bb37ceb2bdcb74ba769f4df62"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11; font-size: 80%;"><pre class="ruby"><code data-line-numbers="">def get_reports_menu(group = current_group, mode = "menu")
+  rptmenu = []
+  reports = []
+  folders = []
+  user = current_user
+  @sb[:grp_title] = reports_group_title
+  data = []
+  if !group.settings || group.settings[:report_menus].blank? || mode == "default"
+    # array of all reports if menu not configured
+    data = MiqReport.for_user(current_user).where(:template_type =&gt; "report").order(:rpt_type, :filename, :name)
+    data.each do |r|
+      r_group = r.rpt_group == "Custom" ? "#{@sb[:grp_title]} - Custom" : r.rpt_group # Get the report group
+      title = r_group.reverse.split('-', 2).collect(&amp;:reverse).collect(&amp;:strip).reverse
+      next if mode == "menu" &amp;&amp; title[1] == "Custom"
+      if @temp_title != title[0]
+        @temp_title = title[0]
+        reports = []
+        folders = []
+      end
+
+      if title[1].nil?
+        if title[0] == @temp_title
+          reports.push(r.name) unless reports.include?(r.name)
+          rptmenu.push([title[0], reports]) unless rptmenu.include?([title[0], reports])
+        end
+      else
+        if @temp_title1 != title[1]
+          reports.sort!
+          reports = []
+          @temp_title1 = title[1]
+        end
+        rptmenu.push([title[0], folders]) unless rptmenu.include?([title[0], folders])
+        reports.push(r.name) unless reports.include?(r.name)
+        folders.push([title[1], reports]) unless folders.include?([title[1], reports])
+      end
+    end
+
+
+    if group.settings &amp;&amp; group.settings[:report_menus] &amp;&amp; mode == "default"
+      rptmenu = rptmenu.concat(group.settings[:report_menus])
+    end
+  else
+    temp = []
+    subfolder = %w(Custom)
+    @custom_folder = [@sb[:grp_title]]
+    @custom_folder.push([subfolder]) unless @custom_folder.include?([subfolder])
+
+    custom.select! { |item| item.second.to_i == current_group.try(:id) } unless current_user.admin_user?
+    custom = MiqReport.for_user(current_user).sort_by { |r| [r.rpt_type, r.filename.to_s, r.name] }
+    rep = custom.select do |r|
+      r.rpt_type == "Custom" &amp;&amp; (user.admin_user? || r.miq_group_id.to_i == current_group.try(:id))
+    end.map(&amp;:name).uniq
+
+    subfolder.push(rep) unless subfolder.include?(rep)
+    temp.push(@custom_folder) unless temp.include?(@custom_folder)
+    temp2 = group.settings[:report_menus]
+    # don't add custom reports to rptmenu when building tree for menu editor form
+    rptmenu = mode == "menu" ? temp2 : temp.concat(temp2)
+  end
+  # move Customs folder as last item in tree
+  rptmenu[0].each do |r|
+    next unless r.class == String &amp;&amp; r == @sb[:grp_title]
+
+    @custom_folder = copy_array(rptmenu[0]) if @custom_folder.nil?
+    rptmenu.push(rptmenu[0]) unless rptmenu[0][1][0][1].empty?
+    rptmenu.delete_at(0)
+  end
+  rptmenu
+end
+</code></pre></div></div>
+</section><section data-id="b16484313c6b944f658554a17fd5b0f1"><div class="sl-block" data-block-type="text" style="height: auto; width: 718px; left: 121px; top: 302px;" data-block-id="de5334be3c6b7ea3af3d7e68eaf3a357"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>The hard way</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 432px; left: 77px; top: 134px;" data-block-id="c4aac45fd2455369f80761b5afb87bf4"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img style="" data-natural-width="1000" data-natural-height="536" data-lazy-loaded="" data-src="strangecode-moscow/d1485b58ffa8c61597eceb835e6bbbe8.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 641px;" data-block-id="8e39d294f1553d467c5c32659ce85aea"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="0">
+<p>source: martinfowler.com</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 700px; height: 700px; left: 130px; top: 0px;" data-block-id="35e471aa864dac22342562b4b49fccb1"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="1"><img style="" data-natural-width="1342" data-natural-height="1342" data-lazy-loaded="" data-src="strangecode-moscow/07a071bb6796c7ec0c3fb2702c09fc32.png"></div></div></section><section data-id="4298fb283eb4d88c379e5e32e74da5ac" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="58328522b91e734f644026ab4bc5c3cd"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 10; font-size: 80%;"><pre class="ruby"><code data-line-numbers="|8,42,59|2,40,58,24,32,68|61-67|7,10,,11|3,4,17,18,23,33,28,29,34|12,14,44-46,55,64|13|15,16,27,30,24,32,34|">def get_reports_menu(group = current_group, mode = "menu")
+  rptmenu = []
+  reports = []
+  folders = []
+  user = current_user
+  @sb[:grp_title] = reports_group_title
+  data = []
+  if !group.settings || group.settings[:report_menus].blank? || mode == "default"
+    # array of all reports if menu not configured
+    data = MiqReport.for_user(current_user).where(:template_type =&gt; "report").order(:rpt_type, :filename, :name)
+    data.each do |r|
+      r_group = r.rpt_group == "Custom" ? "#{@sb[:grp_title]} - Custom" : r.rpt_group # Get the report group
+      title = r_group.reverse.split('-', 2).collect(&amp;:reverse).collect(&amp;:strip).reverse
+      next if mode == "menu" &amp;&amp; title[1] == "Custom"
+      if @temp_title != title[0]
+        @temp_title = title[0]
+        reports = []
+        folders = []
+      end
+
+      if title[1].nil?
+        if title[0] == @temp_title
+          reports.push(r.name) unless reports.include?(r.name)
+          rptmenu.push([title[0], reports]) unless rptmenu.include?([title[0], reports])
+        end
+      else
+        if @temp_title1 != title[1]
+          reports.sort!
+          reports = []
+          @temp_title1 = title[1]
+        end
+        rptmenu.push([title[0], folders]) unless rptmenu.include?([title[0], folders])
+        reports.push(r.name) unless reports.include?(r.name)
+        folders.push([title[1], reports]) unless folders.include?([title[1], reports])
+      end
+    end
+
+
+    if group.settings &amp;&amp; group.settings[:report_menus] &amp;&amp; mode == "default"
+      rptmenu = rptmenu.concat(group.settings[:report_menus])
+    end
+  else
+    temp = []
+    subfolder = %w(Custom)
+    @custom_folder = [@sb[:grp_title]]
+    @custom_folder.push([subfolder]) unless @custom_folder.include?([subfolder])
+
+    custom.select! { |item| item.second.to_i == current_group.try(:id) } unless current_user.admin_user?
+    custom = MiqReport.for_user(current_user).sort_by { |r| [r.rpt_type, r.filename.to_s, r.name] }
+    rep = custom.select do |r|
+      r.rpt_type == "Custom" &amp;&amp; (user.admin_user? || r.miq_group_id.to_i == current_group.try(:id))
+    end.map(&amp;:name).uniq
+
+    subfolder.push(rep) unless subfolder.include?(rep)
+    temp.push(@custom_folder) unless temp.include?(@custom_folder)
+    temp2 = group.settings[:report_menus]
+    # don't add custom reports to rptmenu when building tree for menu editor form
+    rptmenu = mode == "menu" ? temp2 : temp.concat(temp2)
+  end
+  # move Customs folder as last item in tree
+  rptmenu[0].each do |r|
+    next unless r.class == String &amp;&amp; r == @sb[:grp_title]
+
+    @custom_folder = copy_array(rptmenu[0]) if @custom_folder.nil?
+    rptmenu.push(rptmenu[0]) unless rptmenu[0][1][0][1].empty?
+    rptmenu.delete_at(0)
+  end
+  rptmenu
+end
+</code></pre></div></div></section><section data-id="096c56ff4c6eaeb8141082ed1850adaa"><div class="sl-block" data-block-type="text" style="height: auto; width: 749px; left: 106px; top: 70px;" data-block-id="b1e02eea237b633cf6974efc52b4d1ac"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h3 style="text-align:left">Report menu</h3>
+
+<ul>
+	<li class="visible">Report menu -&gt; Folders -&gt; Reports</li>
+	<li class="visible">Main if-else statement
+	<ul>
+		<li class="visible">Default menu</li>
+		<li class="visible">User defined menu</li>
+	</ul>
+	</li>
+	<li class="visible">Custom reports</li>
+	<li class="visible">Structure from string</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 424px; height: 512px; left: 536px; top: 188px;" data-block-id="8f18237c6efdd01121e9b5641ea3a8e8"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="1"><img data-natural-width="424" data-natural-height="512" style="" data-lazy-loaded="" data-src="strangecode-moscow/bf094fea25a24753fba47f01d2b09b6f.png"></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 304px; height: 224px; left: 80px; top: 420px;" data-block-id="9828668b099e73fa251504684ee60b40"><div class="sl-block-content notranslate fragment" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 13;" data-fragment-index="0"><pre class="ruby"><code data-line-numbers="">[
+  [
+    Report Group 1,
+    [
+      Report Group 2,
+  	  [
+        Report Name
+      ]
+    ]
+  ]
+]</code></pre></div></div></section><section data-id="a3f23725b3f838c109535e252b22cb52" data-background-color="#222222"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;" data-block-id="eaaa88064c59700bd16cf50caa0d0caf"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 11;"><pre class="ruby"><code data-line-numbers="|20|1-17|8|9-16|21,32|34">def default_reports_menu
+  data = MiqReport.for_user(current_user)
+                  .where(:template_type =&gt; "report")
+                  .where.not(:rpt_type =&gt; 'Custom')
+                  .order(:rpt_type, :name)
+                  .pluck(:rpt_group, :name)
+
+  mapped = data.map { |grp, items| [grp.split(/ *- */), items].flatten }
+  mapped.group_by(&amp;:first).map do |grp, items|
+    [
+      grp,
+      items.group_by(&amp;:second).map do |subgroup, subitems|
+        [subgroup, subitems.map(&amp;:third)]
+      end
+    ]
+  end
+end
+
+def get_reports_menu(hide_custom = false, group = current_group)
+  reports = group.try(:settings).try(:[], :report_menus) || default_reports_menu
+  unless hide_custom
+    @sb[:grp_title] = reports_group_title
+    custom = MiqReport.for_user(current_user)
+                      .where(:template_type =&gt; "report", :rpt_type =&gt; 'Custom')
+                      .order(:name)
+                      .pluck(:name, :miq_group_id)
+
+    unless current_user.admin_user?
+      custom.select! { |item| item.second.to_i == current_group.try(:id) }
+    end
+
+    reports.push([@sb[:grp_title], [[_("Custom"), custom.map(&amp;:first)]]])
+  end
+  reports
+end
+</code></pre></div></div></section><section data-id="0284ba4262291d99b24b8919a7aba2c4"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 774px; height: 502px; left: 93px; top: 99px;" data-block-id="e26cb28018dc873185597befbda6b4c5"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="774" data-natural-height="502" data-lazy-loaded="" data-src="strangecode-moscow/b2aa0adcc5b5b9b41a34cea2fca3e57b.png"></div></div></section><section data-id="761c61775639b9e0849808d9e6399891"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 774px; height: 502px; left: 93px; top: 99px;" data-block-id="26cacc014feb602473b6536db0263530"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="774" data-natural-height="502" data-lazy-loaded="" data-src="strangecode-moscow/f0f6942e96f394b06fff161059a5fa48.png"></div></div></section><section data-id="84976edb28a674346e96c06e3f57c08a"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 302px;" data-block-id="f91e515d5bd48281d34e45e270250034"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Small steps*</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 631px;" data-block-id="15fb95ed4131240c38b8082b04f09176"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>* document them so others will understand</p>
+</div></div></section><section data-id="7000d975f865387a161bd9fdd2ccf4d4"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 253px;" data-block-id="c08c500104fe4582a8cf871e6aa305f6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>No one likes bad code!</h1>
+</div></div></section><section data-id="ad424210b5f2cb4ddaea0dc15224f50d"><div class="sl-block" data-block-type="text" style="height: auto; width: 700px; left: 130px; top: 253px;" data-block-id="9c7f2b77cc29b50443646e4e56388c72"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>No one wants to write bad code!</h1>
+</div></div></section><section data-id="06a36f0e046f9649d8032e8fcd4e6a05"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 98px;" data-block-id="00c35ad54b540f6937c651b744bc7aa7"><div class="sl-block-content rh-ul" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;" dir="ui">
+<h1 style="text-align:left"><span style="font-size:0.7em">So how bad code happens?</span></h1>
+
+<ul>
+	<li class="visible">
+	<p><span style="font-size:1.0em"><strong>No</strong> time</span></p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="0">
+		<p><span style="font-size:1.0em">​I need this by tomorrow</span></p>
+		</li>
+	</ul>
+	</li>
+	<li class="visible">
+	<p><span style="font-size:1.0em"><strong>No</strong> motivation</span></p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="1">
+		<p><span style="font-size:1.0em">​I don't want to get tangled into this too much</span></p>
+		</li>
+	</ul>
+	</li>
+	<li class="visible">
+	<p><span style="font-size:1.0em"><strong>No</strong> experience</span></p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="2">
+		<p><span style="font-size:1.0em">​I don't know how to do it <em>The Right Way</em></span><em>™</em></p>
+		</li>
+	</ul>
+	</li>
+	<li class="visible">
+	<p><span style="font-size:1.0em"><strong>No</strong> good example</span></p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="3">
+		<p><span style="font-size:1.0em">​I don't see any good patterns in your codebase</span></p>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="0edef81debbc5eecd953451b74dbe693"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 22px;" data-block-id="8d23978d5536989535ffcd343a720cb1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h2>Key takeaways</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 117px;" data-block-id="04a848aef4c9bd8ea896525bd4a8f31c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+<span class="_3oh- _58nk">Москва не сразу строилась</span>
+	<ul>
+		<li class="fragment" data-fragment-index="1">Set a high-level vision/target/goal</li>
+		<li class="fragment" data-fragment-index="2">Take small and reversible steps forward</li>
+		<li class="fragment" data-fragment-index="3">Avoid premature optimization</li>
+		<li class="fragment" data-fragment-index="4">You cannot save the world in a day</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="5">Don't be afraid to
+	<ul>
+		<li class="fragment" data-fragment-index="6">drop a bad pattern</li>
+		<li class="fragment" data-fragment-index="7">add complexity for a future gain</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="8">Systematic solutions</li>
+	<li class="fragment" data-fragment-index="9">Brute force</li>
+	<li class="fragment" data-fragment-index="10">But sometimes you have to think</li>
+</ul>
+</div></div></section><section data-id="e99d83c0b8a8a0bc4ca9748cc083f09d"><div class="sl-block" data-block-type="text" style="height: auto; width: 700px; left: 130px; top: 302px;" data-block-id="3af939f14b380345562ae51c2178ede7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Set a goal!</h1>
+</div></div></section><section data-id="2120710220e4168f45bea53f5eee9eb6"><div class="sl-block" data-block-type="text" style="height: auto; width: 700px; left: 130px; top: 302px;" data-block-id="88331529f2dd2e0ba46bda22bee4c64b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Make small steps!</h1>
+</div></div></section><section data-id="fa9da6d3054093c98fc1907f59c56f88"><div class="sl-block" data-block-type="text" style="height: auto; width: 700px; left: 130px; top: 253px;" data-block-id="ca250e7476bc237d45df94007aa69ff9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Know your patterns!</h1>
+</div></div></section><section data-id="1d3c5921c12c1b8826e4c3fca7824711"><div class="sl-block" data-block-type="text" style="height: auto; width: 700px; left: 130px; top: 302px;" data-block-id="a2cca0e095e3a1e66cd5e1a66a2a751d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h1>Be declarative!</h1>
+</div></div></section><section data-id="3364ba69643d0d860aae1296031666d6"><div class="sl-block" data-block-type="text" style="height: auto; width: 700px; left: 130px; top: 92px;" data-block-id="98d8f4af2eec88adbc019bab7714fa77"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h1>Thank you!*</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 174px; height: 161px; left: 160px; top: 309px;" data-block-id="696eec4721338c1b64fba97578df2613"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="999" data-natural-height="922" data-lazy-loaded="" data-src="strangecode-moscow/ecbff2367da6b9e793a593a743e2c586.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 210px; height: 210px; left: 615px; top: 280px;" data-block-id="05f0270bb9f59e817d0d57e66d2e704c"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1000" data-natural-height="1000" data-lazy-loaded="" data-src="strangecode-moscow/93689e774cd195e6520928088ebf81b9.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 480px; top: 490px;" data-block-id="37e4b3008841882c3a5f73b68d6b3588"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 90%;">
+<p>Dávid Halász<br>
+dhalasz@redhat.com<br>
+Twitter: halaszdavid<br>
+GitHub: skateman</p>
+
+<p><span style="font-size:0.5em">I have some stickers of George and Purr</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 0px; top: 490px;" data-block-id="9955aa969a6c4193ef6ecd4d629eb7af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 90%;" dir="ui">
+<p><span style="color:rgb(53, 64, 69); text-align:left">www.manageiq.org</span></p>
+
+<p><span style="color:rgb(53, 64, 69); text-align:left">github.com/manageiq</span><br>
+ </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 469px; left: 13px; top: 633px;" data-block-id="e8197b7477e7b4a785455f5279fd2098"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="0">
+<p>* Someone will ask about tests</p>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1571381,"slug":"strangecode-moscow","title":"Dr Strangecode","description":"","width":960,"height":700,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/537cedd9a13959e7b9f212b4e057cea9/thumb.jpg?1568916394","view_count":13,"user":{"id":313481,"username":"dhalasz","name":"Dávid Halász","description":"","thumbnail_url":"https://www.gravatar.com/avatar/0fd95585fde74d1fab7f98cd47d403c2?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":true,"lite":false,"team_id":32,"settings":{"id":142307,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null},"enterprise":true,"membership":{"role":"member","manager":false,"activated":true}},"background_transition":"none","transition":"none","theme_id":null,"theme_font":"opensans","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":130,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1569663027179,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{"cea876700f3847ab8db55bffd51e83c6":"Hello everyone,\n\nI'm David and I'm going to tell you a story, but first let me tell you...","d77e98905ad1bdba9d538a508db1d1b6":"this is my 3rd time in Russia and second time in Moscow, the very first one was last year's Ruby Russia conferece","63c147f40711d474773c18838464100d":"","cf4564152a72005df4d051ba5dbfb2c8":"","d9b4ed329dd094fb7422f79835d9c061":"Our city is famous for beer, motoGP and we have a few very weird sculptures.\nThey are even weirder when you realize that the last two are actually facing towards each other.","c7629c7cecd1c6f8df38b0d916479b2b":"My very first position at RH was Quality Engineering, I did some automated testing of RPM repositories in Python.","a4ef2eb7a6d05aea45c214d6fc5e0b78":"","5d1847783efeb8e857ca2c993113f219":"","5ab08591bbc157bdce049a21792fa70e":"something called ManageIQ. It is an open-source web-based application for managing hybrid infrastructures, cloud, on-premise virtualization, containers, etc.\nBasically if you have a cloud, we can manage it. ","ee3c3affeb6b5418162c31efd559c73e":"Here's a short list of platforms we support and work with, you can interact with all of these and manage/optimize/automate them from a single interface.","faeb46604d94898bceb49a74ae841df8":"and there are no words to express what I felt","013f0aa62d57ff34dd98f68fb8e29555":"","6655f34713ecc9d30e0756cdbf1b3c83":"In 2012 my classmate borrowed me a book about Rails, it was basically my starting point into this community here.\nThanks to this book and some messing around with school projects in Rails, I really quickly became an experienced developer.","8edcfe7acd71975e5d74e7e7ba536e20":"","fc872db5a5868b6dd0b9045632c576f3":"And by experienced I mean someone who can use these two commands.\nDuring my university time, I started interning at a small startup","e43b0bf1a4925b6a8f1576c677102a3a":"","c244cfe10769cf44d73ee5374b08efa4":"I just saw the bad code and was mad at the world.","b529222a45f5a80b1aacf2d5f831bdeb":"I was very excited to work on this project so I did that any other developer would do","e166878d241cbc0e99696903930eafbf":"You might have the same face","e89623eb82dccdc6f52127c38baa0270":"","e58ad403f1d8784d7b1a8716952be41b":"but there were numbers, numbers of lines of code and if you look into the bottom right corner","4e3da2971cc76284077faf94e58ee480":"To understand the context of my story, I have to tell you a little history behind ManageIQ.\nIt wasn't always a Red Hat product, it started as a separate company in 2006.\nIt was developed as a startup and its codebase has been constantly evolving in the last 13 years. No rewrites!\nThe original name of the product was EVM, and the interesting part is that it was running on Rails 1.2.3.\nAs I said, there were no rewrites only constant evolution, so we're still working with the same application, we just kept updating Ruby \u0026 Rails underneath.","7c0278d66f75961c1adb2519e44af768":"So this one was among the first files I worked with. \nIt displays a 3 column table with checkboxes, unfortunately I couldn't render it from the old codebase, but you can probably imagine 3 checkboxes :)\nYou can see a lot of issues here...","06a36f0e046f9649d8032e8fcd4e6a05":"And if we look at some of the reasons behind the bad code.\nYou will see that all of them can be avoided, sometimes even if you are a startup.","aa387bac234bbb4d84a79d73c61d6f27":"","ad424210b5f2cb4ddaea0dc15224f50d":"and there's no evil mastermind who writes bad code just to annoy you,\nat least I'd like to think that this is true","1de1fb12cee315dc1a9713e3823a1c68":"","c2eeaf26f3dd98113344a91ce18a9d77":"","948680f510d4d04746848006d7d19333":"","f7d3f055b1c752fb4b89357d5d162ffb":"This is how we used to determine for a given model, what kind of icon we want to use.\nAnytime you want to add a new one, we play Jenga...","586d89f4bbc28cfde29a6699a95114ec":"","9380ce43482097a67b145f9f45364df0":"which I can zoom in","ee1885f236ed85191eb86eb046a69027":"Just to make it more dramatic it's","93e82af298cdc0c73ad8cbed844f7c3b":"Startups at their very first stage have different priorities than regular projects.","57ed1c4c6be4a7728b42908709e7bf3a":"Some of these problems are system-level and fortunately a system-level fix existed for them.","8357e112b5270fa020392748df5c05bd":"","c55e7afe71b80360fe0ef9ee8f2f0ed1":"","46b7d0b422bcd14a6c955c034fc461e1":"Of course this seems like an easy task, but it took me 2 months. At least it made me a top contributor on the repo.\nBrute force :)","5d4e1ec7addb8f1290734e3cf6c3f4ba":"","a637477f5ca62d158f0022de8de035bb":"https://github.com/ManageIQ/manageiq/issues/3742\nhttps://github.com/ManageIQ/manageiq/pull/2354\nhttps://github.com/ManageIQ/manageiq/pull/3968\nhttps://github.com/ManageIQ/manageiq/pull/3690\nhttps://github.com/ManageIQ/manageiq/pull/3688/files\nhttps://github.com/ManageIQ/manageiq/pull/4605\nhttps://github.com/ManageIQ/manageiq/issues/5799","d613063315affd7fb0ea232710ea54db":"","da2b0d19a1430e82180216742b44695d":"https://github.com/ManageIQ/manageiq/pull/8694\nhttps://github.com/ManageIQ/manageiq/pull/11448\nhttps://github.com/ManageIQ/manageiq/pull/12766/files","49351b47581f8de53c05f79999c11ced":"","fb948c59bddf82cc0ba4d9ebcf6f4fe8":"","1495a6bac393cf63c85e615b3c08cdb1":"","8eb11d6f4ffd1c534cc31bf6f13915bf":"","6a91cc51600849a489b88dac3c0c0e9e":"","9ce937a8ca84f45eeb7eec067cf879bb":"","b49564e7d76e0018e50224f6a260f072":"In 2010 I moved to Brno to study computer and embedded systems, so basically IoT before it was named so or cool.\nI actually have a master's degree in the field, but those 5-6 years made me realize that I don't ever want to do HW for living.","47f5e546e47f10604be8b46114465058":"I didn't like it very much, but my passion for open source kept me staying. I was basically living my high school dream of working on open-source stuff, for actual money.\nIn less than a year I switched teams and started working on","44370e2906db24dc453312d961e7c426":"","70e7013f4e0b314c4dd008758d64ed71":"The more you grow, the more your hacks, antipatterns and tradeoffs will become painful. The technical debt will grow with your product.\nYou will have to maintain your codebase while adding new features. And believe me, it'll get harder and harder.\nAnd I'm not saying this is avoidable, because if you take your time and you implement everything the right way, you might be too late to make money.\n\nThe growth of your startup can easily lead to a fundamental change on your business and development model","7377c5f4a6b7064fd42d69311e3a5fc7":"","5bb62e00450c0ec60fb4d8aa57118a52":"","a53330963fb0c48caaeb15f62a3af0d4":"The way startups work is a little different than regular companies with already existing products.\nMostly because the short-time goals are far more important than the long term and you want to keep your investors happy.","37aa7b071061922cad3f069fe992b9ed":"","4b9c3b65e93d8394c98a2a0bdc05b000":"","4547cd1354f8f13571cc838390da46c8":"","b65d3fc887be167dc880550ba59b3ec9":"","3a3dc2ed262b44a43b85045add768c61":"You would probably describe it as a monolith, but","ff0648e77495af0d5a91320c131ba996":"This transformation can happen inside the company, or as in our case, it can be pushed by an acquisition, but it's not really important.\nYou are already making money with the project and your new job is to keep your customers happy.\nThere is no need for new tradeoffs, you can slow down and shift your priorities.\nYour old development model is no longer good enough, you need to evolve. Your codebase has to improve, otherwise you will get stuck.\nThere's always the drastic alternative to throw out your codebase, and start rewriting everything from scratch ...","705f0766bc738a14ca197e5bab6241e5":"Except of using brute force, it didn't really require much thinking.","3aa1646802c94e6b418f15af41b870be":"","1e11ef0c0aaa3154150222f575f4249c":"so we ","5e82c83d96e5b5ae2f3244d305fd75a5":"... and at this size it was not even an option, as it would take us an etnernity ...","09d601983ac0cca8a1f498e8452200ad":"so we went the hard way of refactoring","c56457c8b261adc048a78db38f17ebb5":"Of course when I just started working","7d59be20289f8390bf848ebc89468edd":"","53e0527f06f6e10b527ecd4290d9e2b2":"It was a little frustrating and the journey is not even close to its end. ","3ff9937fabf128bcb2569d9082e33ce1":"My very first task was to convert our views from ERB to HAML. ","58bb0fd09bbe5b66d3d2acf230e0c7b3":"I had no idea about this, I just wanted to do stuff the way I was used to do in my previous \"rails generate\" carreer","06c547d6f5ab125e2eab338c5f6aa808":"","4817e833f2b3aa9adcb7b69cf508f441":"Before we go deeper and I actually show you some more serious stuff, let's take a step back because I have to explain you something.","4eb06f02c175d1ea51f8bc0eb205c1e8":"it's actually a megalith, one of the largest open-source rails applications out on github.\nI realized pretty fast that my rails generate skills will not get me further here. Let's say I didn't feel very positive.","f1e59b714a9d9931d7c15dbfcfe49cdb":"I created something like this. \nNotice that I not just replaced the for loops, but also got rid of the arithmetics using `each_slice(3)` and a second `each`.\nThe reason for this was, that HAML simply doesn't allow you to \"just add\" a table row whenever you want.\nI think whatever Python wants to teach people, I actually realized when writing HAML.","64f79556cf6ea6a1c184c3753b927135":"So from this","c39e570b41390020b66e7914da667990":"","0b37aa0a6d9aadf0a3a15bd7e278c55b":"","0dcab4e14b8c432ccfc2c4b916c378ee":"By just switching the templating language to a more strict format, we are able to get rid of some issues for \"free\".\nHAML doesn't allow you to write invalid HTML and you no longer need to close the blocks.\nThank to introducing HAML, I was able to get rid of other system-level problems.\nAlso HAML allows to use haml-lint, which is built on top of rubocop :)\n","c06a12dbb381686c95b093120e953f8b":"By just calling a linter, I was able to eliminate indentation and","9f125d76ecb916fa2f44da250a4980d7":"","5da9853836500f5943971760cab721e6":"After finishing my work with the HAMLs, I went for other cheap architectural fixes.","9491c2d5b052cc8229684e74c84daf3c":"","2ac539c8636747a52f22ebd7cc0224e9":"So I found some cheap systematic solutions that made a great impact.\n","1c24a6336960a5dec65640ab12ebbfd8":"Basically we just gonna do everything the \"Rails Way\"","3c7bf19237ee0306c7953fbfb349aaa9":"...not doing things the Rails 1.2 way.","a9cde8ef39c3c536ba75bc548984f698":"Basically most of my early fixes were just doing stuff the Rails Way.\nSometimes this means just...","c5dfc1a5cbea2afc3d8f5e1d3a9a2ad6":"Like making the asset pipeline work by just turning it on :)\nOr getting rid of PrototypeJS\n\nThe 3rd party dependencies were a problem, I started using regular rubygems that plugged JS libraries to the asset pipeline.\nBut this wasn't a viable solution","a179a0fae39b0592481a8377f23ee2c2":"Of course there were stuff that aren't that easy, to be honest we're still struggling with this one.","f2801763f427fc101cedfead88693ba7":"When I joined the team, we were running on Rails 3.2.17","d39260c409e9edb0427014083a45d165":"","f704cca0f33cc47fad2927897dd0179b":"Our product surprisingly uses icons, you know, those small pictures. Here are a few examples.","aabd6451b4d65b24e0c2fd9c8145fbba":"","58a599b6d12fd7e076926141cb883c7d":"and if we flip this around","a3ffa5dae4646d516c406710f7fa7d70":"The purpose of this method is to map a db record to an image.","8f3092f0a71bf7c67afde2be58832785":"we could go with something like this, we could just have a mapping function in the model","ef7ed83087e6950d045ac91ec832d569":"","8776aaf56fc8be2e9a976c75ee5317d9":"so we asked the backend team about it","38abf2fb472e7a55dd67c6f4c5d9f8b9":"","16c987ab98100a1b92472f07bd58d21f":"so we went with a different approach","405c872fe3d6af82eeb4eee47bfac537":"more specifically decorators","8a7083f97dc9e7bd9bec6af3d50f07f3":"...\n\nas you see, we're using a file icon here","df7afa48b9fc564fb33d9f886ef2e7e6":"","4624d65762116e29912eee50c1dd3b36":"","a7fcfbf530a1fd29e08f342a5ca7a2e6":"","491148701b77b4378c1dd1cbe8405689":"","f012f183abb7df9f3434e75de1de97cf":"but we actually replaced those with CSS class fonticons, thanks to the decorators ","bda659a2addd89d33056beb3cc0f93a2":"Of course there was a vision in our technical leadership about what they want...","5b4082bc86c455bb126771dd6d7cc19d":"It was already a hype...","ca14605617eb5bd8a8485acc1f9e4185":"... and our goal in the UI team was aligning with it, but","21f73fad731ce66ff26ca0ba231a919b":"let me remind you this number, it's huge, so this will be a long journey","d40f98707570c803cc39047a8947f9ac":"with small steps. ","e774c41f808952e0b63dc3e7d8e2cfe3":"","9d14e341c2848fab8ddc6d823384bf9c":"So there were some other issues, mostly things that were cool a couple of years ago.\n...\n","4871210b1aeb0cb21a25c1ed51c3b8da":"","62c34fd7fcea15f99583f35bdc01d60a":"","42fb1d67109e6d06b495c0eccd1b1b8a":"Some of them could be solved by using brute force and just going through all the views.\nOthers were not so easy and we're actually still working on them.\nSome of them are related to each other, let me mark them for you.","6b048c588ccef1b57bb151874edaa9df":"And we got different opinions from people","af260a2637e8fed9c31dd7a85b13111d":"","bd062e8cce866e9a82d2b4096a7d0ca3":"","87f8fafd9d446471df9a2b0a310c22ad":"Each of them telling us the best solution","393df3f068b43794a87b805e6a5f6e42":"","7381bc592cf33b5f3319007d0c56b0a1":"So we quickly ended up here. I think you know what I'm talking about.\n","de0c92c04acd9ec0ee62da2f3dbd1a60":"","101b8de0c4671721b1f09a9fc41cca38":"","9c5c180d6dcfc35d27ebbd9d40851fa2":"So we went for the search of the holy grail, that was great at the beginning.\nThey promised a way to import bower packages through the asset pipeline.\n\nBut it was kinda unreliable and some of our custom packages never showed up in the repo.\nSo we went with Bower","532e4cb15b85e542ffb8ffb7dab8b037":"","41b001945caf34e502b6120953a467d8":"","c101db06e5b1dc3b9b9db9a750532042":"but Bower wasn't enough, JS was evolving fast and new packages stopped using bower","5ffd6af2b026ed376e5ab93a5484dacb":"so we started using NPM as well, but NPM wasn't cool","f1260d6222d554c47697c06cd384ff15":"so we replaced it with yarn, there was some time when we used bower, yarn and old JS code from rubygems as well at the same time","d28ba5c731e14373ac7e3f947849ac5d":"thankfully we got rid of Bower","7a6cd3c9020b544cd00e31589e1c62a3":"","edb5716c57cc4674a830adf3583663e6":"","6b712bb08848282a3d8903d5a50ccd55":"","7640fac3e4ff27d21abd96b44b44374a":"We made two statements based on the research:\n- Thanks to WebComponents, all frameworks are moving towards the same pattern, which is nice for us.\n- As we want to have an API-driven UI, the session has to go and live somewhere else, and for that we need some kind of a global state on the frontend.","cc55c31ce7a007a8b1590476f1a7d52e":"","2dc7d5c692a1414fc614e286753e7823":"This is a piece of JS for validating form fields, the original code has been written in Ruby and it has been just ported to JS.","5cdf495c133d592f25d6fde52ecf7054":"","2b5d9b311aeaad0902feee5754904ee3":"","fb5efd6b39c89f1ba58435c9da978bda":"","41fb84b0b3cf03c523c17f63bb842b40":"Some page switches are done by server generated javascript, we similarly handle form validation.\nSo that's the reason we use onChange, we send the data to validate the form. But this could be done on the client side.\nAlso we store a lot of information in the session, but it is not always necessary.\n\nSo we asked some other teams with more frontend experience\n","a758a499b2c572d17eda50032e43f305":"","ddca358d7e8f917e3b5be87f6131bbd7":"","d59039149709ed217a407a79a9640318":"You have to know that we're trying to use a common UI/UX library for all Red Hat projects, called PatternFly.\n\nIts first version was a layer on top of bootstrap with some more enterprise-looking sugar and extra jQuery widgets.\nBut because of the JS frameworks, individual teams started to implement PF stuff in these frameworks.","2208d1cd613fdbea46a40135181b0950":"But we kinda jumped on the hype train a little...","e01cfddb8c9b7fc87f1913e4eb1ccd6c":"As you see on this github contribution graph, at the very beginning angular-patternfly was doing well and this means that we were covered.\nBut later the popularity of react made a situation were a lot of widgets were not available in the angular implementation.","7eafcbd581a72182a91212d278d831a3":"So we started looking at our problems again and investigated all the frameworks and common patterns.","f972577d89ae0fb2eee2e41510875d77":"Actually the choice has been made by the PatternFly team, in the version 4 of their library they went with React only, making our life easier.\nFor the global state implementation we chose Redux, because of its strictness for pure functions and immutability.\nI actually don't know why we chose Redux, but this is what I found in our chat history as an advantage of using it.\n\nOf course I'm a Ruby developer and I'm still skeptical about these choices, but they seem working for now.\nAnd yeah, we have 3 different implementation of stuff right now: angular, react, classic","6b6c53eb67f3c14fe4da7f1155bc41c8":"There were fights about what framework and what variant of javascript to use.\nWe did end up with AngularJS at the very beginning, but as the codebase is huge, we didn't convert much of it.","d718130da888e3b68ae4eee9facb150a":"So we were still in the framework hell, but now with a lot more complex legacy code because of AngularJS.\nWe were kinda conservative about just rewriting stuff to a new framework, because it could take long time.\nAnd for that long time we would have to support 3 different implementations, which isn't nice.","ab8dbb9fb92d6e2fbad10331ebecdbdd":"In the meantime we also started to investigate a better system-wide solution that can survive the framework hell.\nAround 70% of our application are forms, and we already have an implemented custom service dialog solution.","a0533602ce11a9943f139c9f81144385":"So some of our frontend engineers defined a JSON schema that describes forms.\nThe original specification was taken from Mozilla, but it was not sufficient, so we had to add some extras to it.\nOn top of this schema we implemented something called DDF, it's a react component that can render a form into various component libraries.\nSuch as patternfly, or material.","9ac2a32ee5f33436f6db070fff7c9c0e":"So they implemented a library called the Data Driven Forms, which basically renders this JSON schema into Components.\nRight now it renders to react components, but as it's standardized, it is possible to implement a new renderer that renders stuff for a different framework.\nThis way we no longer have to care that much about the famework itself, the form schema is future proof.\n\nAlso the current implementation allows rendering to different design systems, such as PatternFly 3, 4 and Material.\nSo if you have a design system based on react, you can just create a component mapping and you can just start using it.","a9b1d4a5719545e4eb6072dbeecb0fef":"Check it out, it's a nice thing. Right now in my free time I started creating a drag \u0026 drop editor for this schema.\nThanks to the functional implementation of React components, it's just a decorator function around DDF that allows you to D\u0026D.\n\nEven though I don't really like frontend/JS stuff, this DDF looks very promising because if someone decides to use something else than React, we can just reimplement one library instead of our whole application.","6c9423d8a0c62167545718ca3aa36ec0":"","f65090b9fdd3dc3a2177d49e2eaba474":"","f66fe46f8b29e85d254593cb9a0f5749":"On top of icons, we also have something called ","0edef81debbc5eecd953451b74dbe693":"","e5964424c2eb68bbe076755660782662":"These look like this and give you more information about entities.","7ef3e34cffeba004bce92e9dadec4aba":"The code rendering them looked like this.","33ef74753a2afb6c97225a2ead8cc89f":"One of these partials is here, this is exactly for datastores.\nAs you see it's not very nice.","d7ba1496aedeb22c0a2c3327e3d9b105":"So we went back to the previous pattern","586c817889f21ffcaf7c16412c9ee335":"and utilized ...\n\nas you see, we have two methods, the single_quad is an optional setting where you just see one icon instead of four, mostly for smaller screens.","cd54bbab4fcbb4e07b370c4712059921":"On the frontend side, these quadicons are fed by JSON from our decorator and rendered using a React component.\nMuch cleaner and simpler. \n\nI promised you not to talk about JS anymore, I'm sorry. But this JSON + Component pattern is being used across our codebase now.","3f14660221cbff28691ac5675db0a321":"This is something I am still wrestling with, we display hierarchical structures in treeviews.","2aac3a8096bb0b6eb161b4fdd4ab006d":"Something like this, but I can zoom it in.","f573320516c7cb8a18a07a83f6526c23":"","e31baa0525196316c8c1f7ac0e1c0eef":"This is actually part of our presentational layer, we call these things presenters and they live in our UI repo.\n---\nWhen I took this over, it was already working with JSON, so the tech debt didn't seem that much here.\nThere was just some tangling about when the nodes are being added and their parameters changed.","49933c109fd60dbc9cabc6962c6d143c":"This is how we have been building tree nodes based on what kind of node has been sent.\nYou might remember our decorators from the previous slides, so as a solution I went with...","36d114fb9a469b44999bb390cf2d83d9":"","6955886bb83b0b233385cf4ee5a8196c":"","e31bdafc836c126ef648ff63ff2fc472":"The first idea was to use just a single structure for creating trees. We converted all trees to be generated recursively from TreeBuilder.\nAlso got rid of some unnecessary data conversion, we can directly convert from a set of objects to a single hash and then that to a JSON.","644a4e36619737465eec7e268c804796":"On the frontend it uses JSON and a component to render, on the backend we have declarations. Some of them with DSL.\n","a3cc1ba1b8d72514367e3ca2ce9b973f":"But I want you to see, that there's a pattern here. A declarative solution for maintaining a huge UI.","e99d83c0b8a8a0bc4ca9748cc083f09d":"","1d3c5921c12c1b8826e4c3fca7824711":"","3364ba69643d0d860aae1296031666d6":"","fa9da6d3054093c98fc1907f59c56f88":"","2120710220e4168f45bea53f5eee9eb6":"","9e40d769a433fc387debfd7386440dc1":"It's important that I mention the theory of broken windows, which has absolutely nothing to do with software engineering.\nBut you've already seen huts and houses and tenements...\n\nSo if you have a house with a broken window, there's a high chance that there will be a next broken window.\nSlowly the house will turn into ruins and the theory says that the crime rate increases and bla bla bla.\n\nLong story short, you should fix your bad code, because it will attract more bad code.","a3bc09bb6a69925bfa00eaee1813d45e":"Usually when you are developing an app which is growing, this is how would you proceed.\nThe magnitude of the application changes the architecture of it, obviously.\n\nHowever, when you don't care about architecture that much and you want to do stuff fast, you might end up with something like...","794be5da3692ba1105458f4fa2de093d":"","f8937c4ecfe4fadcbffc16835e4ebd2e":"","0f21fe6caff4f52639b94e14080b48d9":"","94e8ab5ac3498e44a989fb85d82d45f1":"I actually borrowed these illustrations from Ivan Nemytchenko, he is writing a great book and he draws really good.\nThe hut on hut architecture built from spaghetti code might work, until you don't care about maintenance.\n\nBut when you want to add a new feature...","5a31fae1beb13bf284a9f91e01c8265c":"And you probably have this question in your mind.","0224bbe480693c1f58d4c75ce28942c2":"Maybe more like? This is not a JS conference.\nBut don't be confused, I'll talk about Ruby stuff, mostly.","d34e5a42f73cc5a5cb04b1ec86b6df18":"and now we support both NPM and yarn, as they finally are much more compatible with each other\nthis is how JS started to eat up our UI team","aeac205973f5b1002b27fc6fcab7ae45":"this was a disaster at first, I created","24653ae637f1c4712f4ac1080978ba1a":"But I didn't go with the existing decorators, I created a TreeNode wrapper object around each object and implemented a mechanism to select the right wrapper.\nIn the wrappers I had a DSL for defining attributes related to the node.\n\nThis might remind you the decorators, but this has been created way before them and I had no idea about the pattern that time.","8a1a72e44f382a1b6eaf31b806ed836a":"This was a bad idea, it gave me a lot of extra work to bridge through my bad pattern.\nIt wouldn't be a bad pattern if we wouldn't have the same thing implemented already...I will eventually have to join these two.","265d40ac7e20462aa9b1e38d1fc3807f":"","1a3209a9759a7d583fe6c5b9e76f526b":"Like our menus, we created a few structures that allow us to declare our menu instead of having a huge switch-case statement.","3a1083ee5efbd10a3731b0554690325d":"Of course sometimes you have these trees organized in accordions. And we used the same declarative pattern as for the menus.\nGood thing is that we can just test these declarations against the logged in user's access control settings easily.","51982bdf15d52e25218c4561a5149e90":"","7c6abe016ae89e852a20edd4bdfccc80":"","e12bf7f700a587d311506bb26c6226e1":"","423e40e34ee53bebffb302fc5743ccc8":"Of course there are places where you can't apply patterns like this.\n","60f2141080d9db0e81a09e37d0dce37d":"There is code that actually needs heavy thinking and refactoring defined in books.","4298fb283eb4d88c379e5e32e74da5ac":"But we're going to go through this piece, just for fun.","b16484313c6b944f658554a17fd5b0f1":"And Mr Fowler is watching us right now. I'm not gonna teach you how to refactor your code, there are a plenty of resources available about it.","a3f23725b3f838c109535e252b22cb52":"...\n\nI think this is a very nice implementation, compared to the original one and I'm super proud of it.\n","096c56ff4c6eaeb8141082ed1850adaa":"The method generates a three level structure based on some context. There can be a default menu for a user and a user-defined one.\nThere's a custom reports folder.\nAnd just to keep this interesting, the structure is stored nowhere and parsed out from strings.","7000d975f865387a161bd9fdd2ccf4d4":"For the end I'd like you to know that...","0284ba4262291d99b24b8919a7aba2c4":"The problem with it is that it's not enough if I understand these changes, I need people to review and merge it.","761c61775639b9e0849808d9e6399891":"And if you look at the number of commits, and the time difference between the PR opened and when it has been merged.\n","84976edb28a674346e96c06e3f57c08a":"You'll understand the importance of making the small steps, ideally visible for others.","b65f81e59d5c25e7ad7d00f63a2f8fa8":"","5abe348457c68636f26bcec6b2723b12":"So from our old if-else spaghetti that generates HTML + JS","14d496b963c8e2842d91db17f072166d":"We're moving to the Decorator generating JSON pattern.\nAlso using structs to generate JSON\nand having just static JSON files","751de50b52c2c35d8f7913988de06dc3":"Eventually all of them might have DSL implementation, but that's not so important right now. We have much more other stuff to clean up.\nAlso we might just move this into JS in the future.","5194c3c12db714d8f43b6a3fdd0ecf74":"","4ee5e110ba091ab819e7003565ddafd9":"If you've been here last year, you might have seen our stickers on the registration desk. \nHere you see some very happy organizers looking at them.","aa029cdc08c8a82c14b7a22616059140":"Just for the record, I'm the guy in the blue shirt","ce5fa4d026447229c14fd9d3c8859ca9":"I was one of the very few non-russian speaking (but actually understaing russian a little) attendees and I really liked it","ddca782d84db1b5daa303fd99d7b814a":"","74fcdc9bc567b05b2fc7fe101131d169":"","aef58cc22fdc9b78ec347401089ed0a3":"","a5d92a235d103f4c5aa1ce956d4ccfb2":"it quickly becomes a game of Jenga where the whole thing can collapse on you","70638dc471a00be3fce9820a6aca3b41":"There are some stuff I'm not gonna cover","03265c5a23d500be237262f5505d7d58":"This is all what I have about JS stuff, I promise.\nAs I don't know how to connect the following slides to the JS, and TBH I don't even want to, here's a photo of my dog.\nThis is how he's utilizing his dog house for sleeping.\n\nI'd like to show you some stuff I have been working on to improve code quality."}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "none",
+				backgroundTransition: "none",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js' },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/reveal-plugins/zoom/zoom.js', async: true }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
